@@ -1,35 +1,172 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
-
-    </head>
-    <body>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Alta y formulario</title>
+  
         <style>
-             * {
-                padding: 0px;
-                margin: 0px;
-                font-family: Arial, Helvetica, sans-serif;
-             }
-
-            h2 {
-                background-color: black;
-                color: #ffffff;
+            * {
+               padding: 0px;
+               margin: 0px;
+               font-family: Arial, Helvetica, sans-serif;
             }
+
+           h2 {
+               background-color: rgb(0, 0, 0);
+               color: #ffffff;
+           }
 
 
             img {
-                width: 100%;
-                height: auto;
+               width: 100%;
+               height: auto;
 
+           } 
+
+           #img_click{
+                width: 10%;
+                height: 10%;
+                float: left;
+           }
+
+           .padding1 {
+               border: 1px solid black;
+               background-color: rgb(213, 213, 213);
+               padding: 50px;
+               margin-bottom: 15px;
+           }
+
+           button {
+               padding: 10px;
+               font: bold .6em sans-serif;
+               border: 3px solid #333;
+               border-radius: 5px;
+               background: none;
+               cursor: pointer;
+          
+           }
+
+           button:hover,button:focus {
+               outline: none;
+               background : #000;
+               color: #FFF;
+           }
+
+           .caja1{
+            width: 200px;
+            height: 100px;
+            background-color: blue;
+            border: 2px solid black;
+            margin: 2px;
+            float: right
             }
 
-        </style>
+            body{
+                font-size:20px;
+                font-style: normal;
+            }
+
+       </style>
+
+    </head>
+    <body>
+        
+
         <img src="img/fondo3.jpg" alt="texto alternativo">
-        <br>
+      
         <h2>APÚNTATE AHORA</h2> 
+        <img id="img_click" src="img/click.png">
+        <br/>
+        <br/>
+        Regístrate y durante este mes te llevarás de regalo nuestra camiseta de EDICIÓN LIMITADA.
+        <form action="procesarPeticion.jsp" method="get"></form>
+        <br/>
+        <br/>
+       
+       
+        <br/>
         <main>
             <section>
+                <h2>SELECCIONA IRON CLUB</h2>
+                <br>
+
+                <label for="centro_irongym">PENDIENTE VER CON JAVI >>>>>> Escoja el centro IRON GYM: </label>
+                <select name="centro_irongym">
+                    <option value="MON" selected>Madrid</option>
+                    <option value="TUE">Barcelona</option>
+                    <option value="WED" >Valencia</option>
+                    <option value="THU">Otro</option>
+                    <option value="FRI">Otro</option>
+                </select>
+                <br />
+                <br />
                 
+                <label for="tarifa"> <h2>SELECCIONA PLAN TARIFA</h2> </label>
+                        <br />	
+                        <input type="radio" name="tarifa" value="S" />BASIC<br />	
+                        <input type="radio" name="tarifa" value="C" />PREMIUM<br />	
+                        <input type="radio" name="tarifa" value="V" checked/>IRON GOLD<br />	
+                       
+                <br />
+                <h2>REGISTRO</h2>
+                <br/>
+                <div class="padding1">
+                    <h1>Datos Personales</h1>
+                    <fieldset>
+                        <label for="sexo"></label>
+                        
+                        <input type="radio" name="sexo" value="S" checked/>Hombre
+                        <input type="radio" name="sexo" value="C" />Mujer	
+                        <input type="radio" name="sexo" value="V" />Otros	
+                        <br />
+                        <br/>
+                        <label for="nombre">Nombre: </label>
+                        <input id="nombre" type="text" name="nombre" />
+                        <label for="apellidouno">Primer Apellido: </label>
+                        <input id="apellidouno" type="text" name="apellidouno" />
+                        <label for="apellidos">Segundo Apellido: </label>
+                        <input id="apellidodos" type="text" name="apellidodos" />
+                        <br/>
+                        <br/>
+                        <label for="date">Fecha de nacimiento</label>
+                        <input type="date">
+                        <label for="dni">Dni: </label>
+                        <input id="dni" type="text" name="dni" />
+                        <label for="direccion">Dirección: </label>
+                        <input id="direccion" type="text" name="direccion" />
+                        <br/>
+                        <br/> 
+                        <label for="tf">Teléfono: </label>
+                        <input id="tf" type="text" name="tf" />
+                        <label for="email">Email: </label>
+                        <input id="email" type="text" name="email" />
+                        <label for="pass">Password: </label>
+                        <input id="pass" type="password" name="pass" />
+                        <br/>
+                        <br/>
+                        <input id="identificador" type="hidden" name="identificador" value="123"/>
+                        <br/>
+     
+                    </fieldset>
+                </br>
+                    <button><h1>Enviar</h1></button>
+                </div>
+         
+                
+                    <label for="terminos">¿Acepta los terminos de uso? </label>
+                            He leido y acepto los terminos de uso <input type="checkbox" name="terminos" value="Y" />
+                    <br/>	 
+                    <br/>	
+
+                </form>
             </section>
         </main>
+
+
+
     </body>
 </html>
+
+
