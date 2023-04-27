@@ -26,14 +26,21 @@
            } 
 
            #img_click{
-                width: 10%;
-                height: 10%;
+                width: 20%;
+                height: 20%;
                 float: left;
            }
 
+           #img_tarifa{
+                width: 90%;
+                height: 60%;
+                float: center;
+           }
+           
+
            .padding1 {
-               border: 1px solid black;
-               background-color: rgb(213, 213, 213);
+               border: 1px solid rgb(0, 0, 0);
+               background-color: rgb(181, 171, 184);
                padding: 50px;
                margin-bottom: 15px;
            }
@@ -68,6 +75,20 @@
                 font-style: normal;
             }
 
+            table{
+                table-layout: fixed;
+                width: 800px;
+                
+            }
+
+            th, td {
+                border: 0px solid blue;
+                width: 300px;
+                word-wrap: break-word;
+                text-align: center
+            }
+         
+
        </style>
 
     </head>
@@ -76,11 +97,14 @@
 
         <img src="img/fondo3.jpg" alt="texto alternativo">
       
-        <h2>APÚNTATE AHORA</h2> 
-        <img id="img_click" src="img/click.png">
+    
+        </table>
+        <h2>MEMBRESIA</h2> 
+        <img src="img/apuntate.jpg">
+        <img id="img_click" src="img/click.jpg">
         <br/>
         <br/>
-        Regístrate y durante este mes te llevarás de regalo nuestra camiseta de EDICIÓN LIMITADA.
+        <br/>
         <form action="procesarPeticion.jsp" method="get"></form>
         <br/>
         <br/>
@@ -91,6 +115,7 @@
             <section>
                 <h2>SELECCIONA IRON CLUB</h2>
                 <br>
+               
 
                 <label for="centro_irongym">PENDIENTE VER CON JAVI >>>>>> Escoja el centro IRON GYM: </label>
                 <select name="centro_irongym">
@@ -104,11 +129,24 @@
                 <br />
                 
                 <label for="tarifa"> <h2>SELECCIONA PLAN TARIFA</h2> </label>
-                        <br />	
-                        <input type="radio" name="tarifa" value="S" />BASIC<br />	
-                        <input type="radio" name="tarifa" value="C" />PREMIUM<br />	
-                        <input type="radio" name="tarifa" value="V" checked/>IRON GOLD<br />	
-                       
+                <br/>
+                
+                <table >
+                    <tr>
+                        <td > <img id="img_tarifa" src="img/basic.jpg"> </td>
+                        <td ><img id="img_tarifa" src="img/premium.jpg"></td>
+                        <td ><img id="img_tarifa" src="img/ironGold.jpg"></td>
+                      </tr>
+                    <tr>
+                        <td><input type="radio" name="tarifa" value="S" /></td>
+                        <td><input type="radio" name="tarifa" value="C" /></td>
+                        <td><input type="radio" name="tarifa" value="V" checked/></td>
+                      </tr>
+                    </tr>
+                </table>
+            
+                <br />	
+                      
                 <br />
                 <h2>REGISTRO</h2>
                 <br/>
@@ -163,7 +201,15 @@
                 </form>
             </section>
         </main>
-
+        <h6 style="text-align:center">
+            <a href="cookies.html" style="color:#979292;">Declaración de cookies</a> 
+            <a href="" style="color:#979292;">Declaración de privacidad</a>
+            <a href="" style="color:#979292;">Derechos de recesión</a>
+            <a href="" style="color:#979292;">Reglamento de videovigilancia</a>
+            <a href=""  style="color:#979292">Términos y condiciones</a>
+            <a href="" style="color:#979292;">Aviso Legal</a>
+        </h6>
+        <br/>
 
 
     </body>
