@@ -10,52 +10,76 @@
             img{
                 width: 100%;
                 min-inline-size: 100px;
+                /* Ponemos la imaen que ocpe el 100% de ancho y con un minimo de 100px*/
             }
 
             h1{
                 color:white;
-                background-color: black;
-                margin-top: 0;
+                background-color: rgb(181, 171,184);
                 padding-left: 2%;
+                /* Todas las h1, la letra blanca, con el color de fonfo, separado de la izquiera 2%*/
+            }
+            
+            table {
+                border-collapse: collapse; 
+                /* Para juntar las líneas de las celdas en una sola línea */
             }
 
+            th {
+                border-bottom: 1px solid rgb(181, 171,184);
+                /* Ponemos el grosor a 1px, solido y de color gris */
+            }
             thead {
-                color: rgb(0, 0, 0);
+                color: rgb(75, 204, 0);
+                /* las letras de la cabecera de la tabla en color verde*/
             }
 
             #a{
                 padding-left: 2%;
-                border-top: 30px solid #000000;
-                border-left: 30px solid #000000;
-                border-right: 30px solid #000000;
+                border-top: 30px solid rgb(181, 171,184);
+                border-left: 30px solid rgb(181, 171,184);
+                border-right: 30px solid rgb(181, 171,184);
+                /* Creamos un borde por arriba y los laterales de 30px */
                 
             }
 
             #b{
-                border-bottom: 30px solid #000000;
-                border-left: 30px solid #000000;
-                border-right: 30px solid #000000;
                 text-align: center;
+                border-bottom: 30px solid rgb(181, 171,184);
+                border-left: 30px solid rgb(181, 171,184);
+                border-right: 30px solid rgb(181, 171,184);
+                /* Lo mismo pero por abajo y los laterales */
+            }
+
+            #b a{
+                display: inline-block;
+                background-color: rgb(75, 204, 0);
+                color: white;
+                line-height: 50px;
+                width: 200px;
+                height: 50px;
+                font-size: 16px;
+                margin: 10px;
+                /* En los enlaces de id=b, los ponemos inline-block, para poder darlebwidht y height. Ponemos color de fondo
+                con backgroun-color. Ponemos en el medio el tecto con line-height. Yponemos un margen de 10px para separalo un poco */
             }
 
             tfoot th:first-child {
                 color: rgb(50, 207, 255);
+                /*resaltamos el pie de la tabla pero solo el primero*/
             }
             
             .verde{
                 color: #30e70c;
-            }
-
-            #c{
-                margin: 8%;
+                /* le ponemos color a todas las class=verde */
             }
 
             #d{
-                background-color: rgb(0, 0, 0);
+                background-color:rgb(181, 171,184);
                 color: white;
                 width: 100%;
-                height: 430px;
-                
+                height: 450px;
+                /* Añadimos un fondo a d de color gris y con esas medidas*/
             }
             @media screen and (max-width: 1102px) {
                 #d{
@@ -63,35 +87,63 @@
                 color: white;
                 width: 100%;
                 height: 780px;
+                /* Cuando camie el tamaño de la pantalla, cambiamos el color de fondo y el tamaño */
                 }
             }
             @media screen and (max-width: 655px) {
                 #d{
-                background-color: rgb(0, 0, 0);
+                background-color: rgb(181, 171,184);
                 color: white;
                 width: 100%;
                 height: 1120px;
+                /* cuando cambie otra vez el ancho, le cambiamos el color y el largo al fondo */
                 }
             }
 
             #d img{
                 margin-left: 5%;
                 margin-right: 5%;
+                /* le ponemos margne a las imagenes de d */
             }
-            #enlaces a{
+            #enlace a{
             display: inline-block;
-            text-align: center;
-            background-color: rgb(0, 0, 0);
+            background-color: rgb(132, 65, 172);
             color: white;
-            margin:20px;
-            font-size: 20px;
+            text-align: center;
+            line-height: 50px;
+            margin: 20px;
+            width: 200px;
+	        height: 50px;
+            font-size: 16px;
+            /* A los enlaces de ale ponemos color, nlineblcok para darles luego tamaño, texto en el centro
+            y alineados en el centro del cuadro, con un tamaño de letra de 16 */
             }
         </style>
     </head>
 
     <body>
         <img src="img/fondo1.jpg" alt="foto de fondo">
-        <h1 > TARIFAS</h1>
+        <h1>TARIFAS</h1>
+        <main>
+            </div>
+            <div style="width: 75%; height:500px; margin-left: auto; margin-right: auto;">
+                <h2>COMPLETA TU INSCRIPCION</h2>
+                <br/>
+                <p>¡Queremos que tu entrenamiento se adapte a ti!</p>
+                <p>En la gran mayoría de nuestros gimnasios tenemos 3 extras con los que puedes completar tu inscripción:</p>
+                <br/>
+                <p>✓ Yanga Sports Water: una bebida deportiva fresquita, sin azúcares añadidos, para tomar antes, después o durante tu entrenamiento.</p>
+                <p>✓ Personal Onlie Coach: Entrenamiento online bajo la supervisión de un entrenador personal certificado </p>
+                <p>✓ Personal Training Intro: ten un comienzo perfecto para conseguir tus mejores resultados.</p>
+                <br/>
+                <p>Echa un vistazo a nuestros extras para hacer quen tus sesiones de entrenamiento en nuestros gimnasios sean aún mejores.</p>
+                <div id="enlace">
+                    <a href="enlace1">▼ Yanga Sports Water ▼</a>
+                    <a href="enlace1">▼ Personal Onlie Coach ▼</a>
+                    <a href="enlace1">▼ Personal Training Intro ▼</a>
+                </div>
+            </div>
+        </main>
         <div id="a"; style="width: 75%; margin-left: auto; margin-right: auto;">COMPARA NUESTRAS SUSCRIPCIONES</div>
         <div>
             <table style="width: 75%; height:600px; margin-left: auto; margin-right: auto;" >
@@ -153,28 +205,12 @@
                     </tr>
                 </tfoot>
             </table>
-        <div id="b" style="width: 75%; margin-left: auto; margin-right: auto;">
-            <br/>
-            <a href="#enlace">▼ APUNTATE AQUI ▼</a>
-        </div>
-        </div>
-        <div id="c"  style="width: 75%; height:600px; margin-left: auto; margin-right: auto;">
-            <h2>COMPLETA TU INSCRIPCION</h2>
-            <br/>
-            <p>¡Queremos que tu entrenamiento se adapte a ti!</p>
-            <p>En la gran mayoría de nuestros gimnasios tenemos 3 extras con los que puedes completar tu inscripción:</p>
-            <br/>
-            <p>✓ Yanga Sports Water: una bebida deportiva fresquita, sin azúcares añadidos, para tomar antes, después o durante tu entrenamiento.</p>
-            <p>✓ Personal Onlie Coach: Entrenamiento online bajo la supervisión de un entrenador personal certificado </p>
-            <p>✓ Personal Training Intro: ten un comienzo perfecto para conseguir tus mejores resultados.</p>
-            <br/>
-            <p>Echa un vistazo a nuestros extras para hacer quen tus sesiones de entrenamiento en nuestros gimnasios sean aún mejores.</p>
-            <div id="enlaces">
-                <a href="enlace1">▼ Yanga Sports Water ▼</a>
-                <a href="enlace1">▼ Personal Onlie Coach ▼</a>
-                <a href="enlace1">▼ Personal Training Intro ▼</a>
+            <div id="b" style="width: 75%; margin-left: auto; margin-right: auto;">
+                <br/>
+                <a href="enlace">▼ APUNTATE AQUI ▼</a>
             </div>
-        </div>
+        <br>
+        <br>
         <div id="d"  style="text-align: center;">
             <h1>IRON GYM</h1>
             <br/>
