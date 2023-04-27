@@ -28,13 +28,14 @@
                 border-top: 30px solid #000000;
                 border-left: 30px solid #000000;
                 border-right: 30px solid #000000;
+                
             }
 
             #b{
-                padding-left: 2%;
                 border-bottom: 30px solid #000000;
                 border-left: 30px solid #000000;
                 border-right: 30px solid #000000;
+                text-align: center;
             }
 
             tfoot th:first-child {
@@ -43,6 +44,47 @@
             
             .verde{
                 color: #30e70c;
+            }
+
+            #c{
+                margin: 8%;
+            }
+
+            #d{
+                background-color: rgb(0, 0, 0);
+                color: white;
+                width: 100%;
+                height: 430px;
+                
+            }
+            @media screen and (max-width: 1102px) {
+                #d{
+                background-color: rgb(0, 0, 0);
+                color: white;
+                width: 100%;
+                height: 780px;
+                }
+            }
+            @media screen and (max-width: 655px) {
+                #d{
+                background-color: rgb(0, 0, 0);
+                color: white;
+                width: 100%;
+                height: 1120px;
+                }
+            }
+
+            #d img{
+                margin-left: 5%;
+                margin-right: 5%;
+            }
+            #enlaces a{
+            display: inline-block;
+            text-align: center;
+            background-color: rgb(0, 0, 0);
+            color: white;
+            margin:20px;
+            font-size: 20px;
             }
         </style>
     </head>
@@ -104,7 +146,7 @@
                     </tr>
                 <tfoot>
                     <tr>
-                    <th style="text-align: left;">Consigue 1 mes gratis apuntandote antes de fin de mes</th>
+                    <th style="text-align: left;">Consigue 1 mes gratis apuntandote ya</th>
                     <th class="verde">✓</th>
                     <th class="verde">✓</th>
                     <th class="verde">✓</th>
@@ -112,11 +154,34 @@
                 </tfoot>
             </table>
         <div id="b" style="width: 75%; margin-left: auto; margin-right: auto;">
-            <p></p>
+            <br/>
             <a href="#enlace">▼ APUNTATE AQUI ▼</a>
         </div>
         </div>
-        
+        <div id="c"  style="width: 75%; height:600px; margin-left: auto; margin-right: auto;">
+            <h2>COMPLETA TU INSCRIPCION</h2>
+            <br/>
+            <p>¡Queremos que tu entrenamiento se adapte a ti!</p>
+            <p>En la gran mayoría de nuestros gimnasios tenemos 3 extras con los que puedes completar tu inscripción:</p>
+            <br/>
+            <p>✓ Yanga Sports Water: una bebida deportiva fresquita, sin azúcares añadidos, para tomar antes, después o durante tu entrenamiento.</p>
+            <p>✓ Personal Onlie Coach: Entrenamiento online bajo la supervisión de un entrenador personal certificado </p>
+            <p>✓ Personal Training Intro: ten un comienzo perfecto para conseguir tus mejores resultados.</p>
+            <br/>
+            <p>Echa un vistazo a nuestros extras para hacer quen tus sesiones de entrenamiento en nuestros gimnasios sean aún mejores.</p>
+            <div id="enlaces">
+                <a href="enlace1">▼ Yanga Sports Water ▼</a>
+                <a href="enlace1">▼ Personal Onlie Coach ▼</a>
+                <a href="enlace1">▼ Personal Training Intro ▼</a>
+            </div>
+        </div>
+        <div id="d"  style="text-align: center;">
+            <h1>IRON GYM</h1>
+            <br/>
+            <img src="img/chicaFondoBlanco1.jpg" style="max-width: 250px; float: left;">
+            <img src="img/chicotableta.jpg" style="max-width: 250px; display: inline-block;">
+            <img src="img/chicaCorriendoFondoAzul2.png" style="max-width: 250px; float: right;">
+          </div>
 
     </body>
 </html>
