@@ -14,9 +14,16 @@
             }
 
            h2 {
-               background-color: rgb(0, 0, 0);
-               color: #ffffff;
+              
+               color: #000000;
            }
+
+           h1{
+                color:white;
+                background-color: rgb(181, 171,184);
+                padding-left: 2%;
+                /* Todas las h1, la letra blanca, con el color de fonfo, separado de la izquiera 2%*/
+            }
 
 
             img {
@@ -87,7 +94,27 @@
                 word-wrap: break-word;
                 text-align: center
             }
-         
+            .contenedor{
+                position: relative;
+                display: inline-block;
+                text-align: center;
+                
+            }
+
+            .texto-encima{
+                position: absolute;
+                top: 10px;
+                left: 10px;
+                color: #FFF;
+            }
+
+            .centrado{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                color: #FFF;
+            }
 
        </style>
 
@@ -99,36 +126,42 @@
       
     
         </table>
-        <h2>MEMBRESIA</h2> 
+        <h1>MEMBRESIA</h1> 
         <img src="img/apuntate.jpg">
-        <img id="img_click" src="img/click.jpg">
-        <br/>
-        <br/>
-        <br/>
+
         <form action="procesarPeticion.jsp" method="get"></form>
-        <br/>
-        <br/>
-       
-       
-        <br/>
+    
+    
         <main>
             <section>
-                <h2>SELECCIONA IRON CLUB</h2>
+                <h1>SELECCIONA IRON CLUB</h1>
                 <br>
-               
+                <div class="contenedor">
+                    <img src="img/gym2.jpg" />
+                    
+                    <div class="texto-encima">
+                        <label for="centro_irongym" >CENTROS IRON GYM: </label>
+                        <select name="centro_irongym">
+                            <option value="ALU" selected>Aluche</option>
+                            <option value="MOS">Móstoles</option>
+                            <option value="ALC" >Alcorcón</option>
+                            <option value="LEG">Leganés</option>
+                            <option value="FUE">Fuenlabrada</option>
+                            <option value="GET">Getafe</option>
+                        </select>
 
-                <label for="centro_irongym">PENDIENTE VER CON JAVI >>>>>> Escoja el centro IRON GYM: </label>
-                <select name="centro_irongym">
-                    <option value="MON" selected>Madrid</option>
-                    <option value="TUE">Barcelona</option>
-                    <option value="WED" >Valencia</option>
-                    <option value="THU">Otro</option>
-                    <option value="FRI">Otro</option>
-                </select>
+
+
+
+                    </div>
+                    <div class="centrado">texto Centrado</div>
+                  </div>
+
+            
                 <br />
                 <br />
                 
-                <label for="tarifa"> <h2>SELECCIONA PLAN TARIFA</h2> </label>
+                <label for="tarifa"> <h1>SELECCIONA PLAN TARIFA</h1> </label>
                 <br/>
                 
                 <table >
@@ -144,14 +177,11 @@
                       </tr>
                     </tr>
                 </table>
-            
-                <br />	
                       
                 <br />
-                <h2>REGISTRO</h2>
-                <br/>
+                <h1>REGISTRO</h1>
                 <div class="padding1">
-                    <h1>Datos Personales</h1>
+                    <h2>Datos Personales</h2>
                     <fieldset>
                         <label for="sexo"></label>
                         
