@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>BUSCADOR DE IRON GYM</title>
+        <title>TARIFAS</title>
 
         <style>
             img{
@@ -13,21 +13,36 @@
             }
 
             h1{
-                color:aliceblue;
+                color:white;
                 background-color: black;
                 margin-top: 0;
                 padding-left: 2%;
             }
+
             thead {
-                color: white;
+                color: rgb(0, 0, 0);
             }
+
             #a{
-              padding-left: 2%;
-              border-top: 30px solid #000000;
-              border-left: 30px solid #000000;
-              border-right: 30px solid #000000;
-                
-                
+                padding-left: 2%;
+                border-top: 30px solid #000000;
+                border-left: 30px solid #000000;
+                border-right: 30px solid #000000;
+            }
+
+            #b{
+                padding-left: 2%;
+                border-bottom: 30px solid #000000;
+                border-left: 30px solid #000000;
+                border-right: 30px solid #000000;
+            }
+
+            tfoot th:first-child {
+                color: rgb(50, 207, 255);
+            }
+            
+            .verde{
+                color: #30e70c;
             }
         </style>
     </head>
@@ -35,63 +50,71 @@
     <body>
         <img src="img/fondo1.jpg" alt="foto de fondo">
         <h1 > TARIFAS</h1>
-        <div id="a" style="width: 75%; margin-left: auto; margin-right: auto;">
-            <p>COMPARA SUSCRIPCIONES</P>
-            <a href="#enlace"> O APUNTATE AQUI ▼</a>
-        </div>
+        <div id="a"; style="width: 75%; margin-left: auto; margin-right: auto;">COMPARA NUESTRAS SUSCRIPCIONES</div>
         <div>
             <table style="width: 75%; height:600px; margin-left: auto; margin-right: auto;" >
                 <thead> <tr>
                     <th></th>
-                    <th>  BASIC  </th>
-                    <th>  CONFORT  </th>
-
-                    <th>  PREMIUM  </th>
+                    <th>BASIC</th>
+                    <th>CONFORT</th>
+                    <th>PREMIUM</th>
                     </tr>
                 </thead>
                     <tr>
-                        <th style="text-align: left;">Precio</th>
-                        <th>29,95€</th>
+                    <th style="text-align: left;">Precio/mes</th>
+                    <th>29,95€</th>
                     <th>39,95€</th>
                     <th>59,95€</th>
                     </tr>
                     <tr>
-                        <th style="text-align: left;">Acceso a todos nuestros gimnasios</th>
-                        <th>✓</th>
-                    <th>✓</th>
-                    <th>✓</th>
+                    <th style="text-align: left;">Acceso a todos nuestros gimnasios</th>
+                    <th class="verde">✓</th>
+                    <th class="verde">✓</th>
+                    <th class="verde">✓</th>
                     </tr>
                     <tr>
-                        <th style="text-align: left;">Lleva siempre a un amigo a entrenar contigo</th>
-                        <th>✓</th>
-                    <th>✓</th>
-                    <th>✓</th>
+                    <th style="text-align: left;">Lleva siempre a un amigo a entrenar contigo</th>
+                    <th class="verde">✓</th>
+                    <th class="verde">✓</th>
+                    <th class="verde">✓</th>
                     </tr>
                     <tr>
-                        <th style="text-align: left;">Acceso ilimitado a la App de Basic-Fit</th>
-                        <th>❌</th>
-                    <th>✓</th>
-                    <th>✓</th>
-                    </tr>
-                    <tr>
-                        <th style="text-align: left;">Entrena en el club y en casa con clases virtuales GXR</th>
-                        <th>❌</th>
-                    <th>✓</th>
-                    <th>✓</th>
-                    </tr>
-                    <tr>
-                        <th style="text-align: left;">Uso ilimitado de sillones de masaje</th>
-                        <th>❌</th>
+                    <th style="text-align: left;">Acceso ilimitado a la App de Basic-Fit</th>
                     <th>❌</th>
-                    <th>✓</th>
+                    <th class="verde">✓</th>
+                    <th class="verde">✓</th>
                     </tr>
                     <tr>
-                        <th style="text-align: left;">Entrenador personal</th>
-                        <th>❌</th>
+                    <th style="text-align: left;">Entrena en el club y en casa con clases virtuales GXR</th>
                     <th>❌</th>
-                    <th>✓</th>
+                    <th class="verde">✓</th>
+                    <th class="verde">✓</th>
                     </tr>
+                    <tr>
+                    <th style="text-align: left;">Uso ilimitado de sillones de masaje</th>
+                    <th>❌</th>
+                    <th>❌</th>
+                    <th class="verde">✓</th>
+                    </tr>
+                    <tr>
+                    <th style="text-align: left;">Entrenador personal</th>
+                    <th>❌</th>
+                    <th>❌</th>
+                    <th class="verde">✓</th>
+                    </tr>
+                <tfoot>
+                    <tr>
+                    <th style="text-align: left;">Consigue 1 mes gratis apuntandote antes de fin de mes</th>
+                    <th class="verde">✓</th>
+                    <th class="verde">✓</th>
+                    <th class="verde">✓</th>
+                    </tr>
+                </tfoot>
             </table>
+        <div id="b" style="width: 75%; margin-left: auto; margin-right: auto;">
+            <p></p>
+            <a href="#enlace">▼ APUNTATE AQUI ▼</a>
+        </div>
         </div>
         
 
