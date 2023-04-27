@@ -5,6 +5,61 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>BUSCADOR DE IRON GYM</title>
         <style>
+            header {
+                height: 120px;
+                border: 1px solid #CCC;
+                background-color:rgb(0, 0, 0);
+                color: #fff;
+                margin-bottom: 5px;
+                border: solid 1px #ccc;
+
+            }
+            
+            .menuCSS3 ul {
+		        display: flex;
+		        padding: 0;
+		        margin: 0;
+		        list-style: none;
+	         }
+
+	        .menuCSS3 a {
+		        display: block;
+		        padding: 2em;
+		        background-color: #000000;
+		        text-decoration: none;
+		        color: #ffffff; 
+    
+	        }
+
+	        .menuCSS3 a:hover {
+		        background-color: #000000;
+	        }
+
+	        .menuCSS3 ul li ul {
+		        display: none;
+	        }
+
+	        .menuCSS3 ul li a:hover + ul, .menuCSS3 ul li ul:hover {
+		        display: block;
+	        }
+            body {
+                background:#ffffff;
+                color:rgb(0, 0, 0);
+                font-size:20px;
+                font-family:sans-serif;
+                border: 1px solid #CCC;
+                padding: 5px;
+                width: 80%;
+                margin: 20px auto;
+
+            }
+            h6 { 
+                color: #000000; 
+                background-color:#ffffff;
+            }
+            h1{
+                background-color:  rgb(181, 171,184);
+            }
             #a img{
                 max-width: 450px;
             }
@@ -17,6 +72,48 @@
     </head>
     <body>
         <img src="img/fondo2.jpg" style="width: 100%;">
+        <header>
+            <h6 style="text-align:center" color: #fff >Consigue tu regalo exclusivo <a href=alta.html>¡Apúntate ahora!</a></h6>
+            
+                        <nav class="menuCSS3">
+                            <ul>
+                                <li><a href="">III</a>
+                                </li>
+                                <li><a href="">IRON</a></li>
+                                <li><a href="buscador.html">Buscador</a></li>
+                                <li><a href="tarifas.html">Tarifas</a>
+                                    <ul>
+                                        <li><a href="tarifas.html">Basic</a></li>
+                                        <li><a href="tarifas.html">Premium</a></li>
+                                        <li><a href="tarifas.html">Iron Gold</a></li>
+                                    </ul>
+                                </li>
+                
+                                <li><a href="clases.html">Clases</a>
+                                    <ul>
+                                        <li><a href="clases.html">Live</a></li>
+                                        <li><a href="clases.html">Virtuales</a></li>
+                                        <li><a href="clases.html">On-Demand</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="coach.html">Coach</a>
+                                    <ul>
+                                        <li><a href="coach.html">Presencial</a></li>
+                                        <li><a href="coach.html">On line</a></li>
+                                    </ul>
+                                </li>  
+                                <li><a href="alta.html">Atla</a>
+                                    <ul>
+                                        <li><a href="alta.html">Afiliación</a></li>
+                                        <li><a href="contacto.html">Contacto</a></li>
+                                    </ul>
+                                </li>
+                                
+                            </ul>
+                        </nav>
+            
+            <p>&nbsp;</p>
+        </header>
         <div id="a" style="width: 75%; margin-left: auto; margin-right: auto;">
             <h1>Busca tu gimnasio más cercano</h1>
             <br/>
