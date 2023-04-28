@@ -1,35 +1,60 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>COOKIES</title>
+<html lang="en">
 
-    </head>
-    <body>
-        <p>A la hora de ofrecer sus servicios, Basic-Fit hace uso de cookies.</p>
-        <h2>¿QUÉ SON LAS COOKIES?</h2>
-        <p>Las cookies son pequeños archivos de texto que se colocan en su ordenador, su tablet o su smartphone
-             durante su visita a una página web. En este archivo de texto se almacena información (anonimizada) 
-             que puede ser reconocida de nuevo por dicha web durante una visita posterior. Algunas cookies son 
-             necesarias para el correcto funcionamiento de una página web, otras cookies son útiles para que el 
-             visitante no tenga que introducir la misma información y otras cookies posibilitan que los administradores
-              de las páginas web y los anunciantes coloquen anuncios específicos. El uso de cookies en nuestras
-               páginas web es importante para Iron-Gym, por lo que en esta declaración de cookies queremos informar
-               le lo mejor posible sobre el uso de estas por parte de nuestra empresa.</p>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Posicionamiento Fijado</title>
 
-        <h2>TIPOS DE COOKIES</h2>
-        <p>En las páginas web de Basic-Fit utilizamos diferentes tipos de cookies. Estas pueden dividirse en los siguientes tipos:
-            <br>
-            Su consentimiento se aplica a los siguientes dominios: auth.basic-fit.com, login.basic-fit.com, advertising.basic-fit.com, corporate.basic-fit.com, homefitness.basic-fit.com, my.basic-fit.com, jobs.basic-fit.com, webshop.basic-fit.com, www.basic-fit.com
-            <br>
-            Tu estado actual: Denegar. 
-            <br>
-            ID de tu consentimiento: sk0fqL02acFNzwCuwwGLl10Q+1v8OE6LZFt9A9FToE47OBqpsCHtSw==
-            <br>
-            Fecha del consentimiento: martes, 18 de abril de 2023, 14:19:39 CEST
-            <br>
-            Cambiar tu consentimiento.</p>
-    </body>
+    <style>
+        header {
+            position: fixed;
+            width: 100%;
+            height: 75px;
+            top: 0px;
+            left: 0px;
+            background-color: rgb(255, 255, 255);
+            z-index: 2;
+            text-align: center;
+            font-family: sans-serif;
+            font-size: 30px;
+            padding-top: 25px;
+            color:rgb(255, 255, 255);
+           
+        }
+
+        main {
+            position: absolute;
+            width: 98%;
+            top: 100px;
+            left: 0px;
+            height: 1300px;
+            background-color: rgb(181, 171, 184) ;
+            z-index: 1;
+            padding-left: 2%;
+            font-size: large;
+            font-weight: bold;
+        }
+
+        
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="img/declaracacionCookies.png">
+    </header>
+    <main>
+        <section>
+            <p>Este es el contenido de la página</p>
+           
+        </section>
+    </main>
+</body>
+
 </html>
+
+
+
 
