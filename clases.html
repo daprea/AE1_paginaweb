@@ -105,12 +105,24 @@
             /* CSS RESPONSIVO */
             
              /* pantallas > 1300px*/
-            @media only screen and (min-width : 901px) {
+             @media only screen and (min-width : 2000px) {
                 body {
                     width: 94%;
                 }
                 section {
                     width: 70%;
+                }
+                aside {
+                    width: 29%;
+                }
+            }       
+
+            @media only screen and (min-width : 1300px) {
+                body {
+                    width: 94%;
+                }
+                section {
+                    width: 65%;
                 }
                 aside {
                     width: 29%;
@@ -126,14 +138,26 @@
                 }
                 aside {
                     width: 100%;
-                }
-                #img_logo{
-                    display: none;
-                }
+                }               
                 #section{
                     display: none;
                 }
-            }                  
+            }            
+            
+            @media only screen and (max-width : 850px) {
+                body {
+                    width: 100%;
+                }
+                section {
+                    width: 70%;
+                }
+                aside {
+                    width: 100%;
+                }               
+                #section{
+                    display: none;
+                }
+            }              
 
             .foto{
                 width: 64%;
