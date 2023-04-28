@@ -4,173 +4,30 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>CONTACTO</title>
-    <style>
-             * {
-               padding: 0px;
-               margin: 0px;
-               font-family: Arial, Helvetica, sans-serif;
-            }
-            header {
-                height: 120px;
-                border: 1px solid #CCC;
-                background-color:rgb(0, 0, 0);
-                color: #fff;
-                margin-bottom: 5px;
-                border: solid 1px #ccc;
-
-            }
-            
-            .menuCSS3 ul {
-		        display: flex;
-		        padding: 0;
-		        margin: 0;
-		        list-style: none;
-	         }
-
-	        .menuCSS3 a {
-		        display: block;
-		        padding: 2em;
-		        background-color: #000000;
-		        text-decoration: none;
-		        color: #ffffff; 
-    
-	        }
-
-	        .menuCSS3 a:hover {
-		        background-color: #000000;
-	        }
-
-	        .menuCSS3 ul li ul {
-		        display: none;
-	        }
-
-	        .menuCSS3 ul li a:hover + ul, .menuCSS3 ul li ul:hover {
-		        display: block;
-	        }
-            body {
-                background:#ffffff;
-                color:rgb(0, 0, 0);
-                font-size:20px;
-                font-family:sans-serif;
-                border: 1px solid #CCC;
-                padding: 5px;
-                width: 80%;
-                margin: 20px auto;
-
-            }
-
-            h1{
-                color:white;
-                background-color: rgb(181, 171,184);
-                padding-left: 2%;
-                
-            }
-
-            .padding1 {
-               border: 1px solid rgb(0, 0, 0);
-               background-color: rgb(181, 171, 184);
-               padding: 50px;
-               margin-bottom: 15px;
-            }
-
-            .padding2 {
-              
-               background-color: rgb(255, 255, 255);
-               padding: 50px;
-               margin-bottom: 15px;
-            }
-
-    </style>
-
     </head>
-    <body>
-        <header>
-            <h6 style="text-align:center" color: #fff >Consigue tu regalo exclusivo <a href="alta.html">¡Apúntate ahora!</a></h6>
-            
-                        <nav class="menuCSS3">
-                            <ul>
-                                <li><a href="index.html">III</a>
-                                </li>
-                                <li><a href="iron.html">IRON</a></li>
-                                <li><a href="buscador.html">Buscador</a></li>
-                                <li><a href="tarifas.html">Tarifas</a>
-                                    <ul>
-                                        <li><a href="tarifas.html">Basic</a></li>
-                                        <li><a href="tarifas.html">Premium</a></li>
-                                        <li><a href="tarifas.html">Iron Gold</a></li>
-                                    </ul>
-                                </li>
-                
-                                <li><a href="clases.html">Clases</a>
-                                    <ul>
-                                        <li><a href="clases.html">Live</a></li>
-                                        <li><a href="clases.html">Virtuales</a></li>
-                                        <li><a href="clases.html">On-Demand</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="coach.html">Coach</a>
-                                    <ul>
-                                        <li><a href="coach.html">Presencial</a></li>
-                                        <li><a href="coach.html">On line</a></li>
-                                    </ul>
-                                </li>  
-                                <li><a href="alta.html">Atla</a>
-                                    <ul>
-                                        <li><a href="alta.html">Afiliación</a></li>
-                                        <li><a href="contacto.html">Contacto</a></li>
-                                    </ul>
-                                </li>
-                                
-                            </ul>
-                        </nav>
-            
-            <p>&nbsp;</p>
-        </header>
-        <form action="procesarPeticion.jsp" method="get"></form>
+        <img src="img/logoGris.png" width="50" height="50">
+        <h2>ENVIAR PREGUNTA</h2>
+      
+        <label for="observaciones"> Nombre:  </label>
+        <br/>	
+        <textarea style="resize: none;" rows="1" cols="70" name="observaciones"></textarea>
+        <br/>  
+        <br/>
+        <label for="observaciones"> Email:  </label>
+        <br/>               
+        <textarea style="resize: none;" rows="1" cols="70" name="observaciones"></textarea>
+        <br/>
+        <br/>
+        <label for="observaciones"> Comentario:  </label>
+        <br/>       
+        <textarea style="resize: none;" rows="10" cols="70" name="observaciones"></textarea>
 
-        <h1>Contacta con nosotros</h1>
-
-        <div class="padding2">
-            <p>
-                Envíanos un mensaje y consulta nuestras las preguntas más frecuentes. Nuestro sistema está preparad0 para ayudarte y responderte
-                 las 24 horas del día, los 7 días de la semana. Si no podemos ayudarte a través del chat, ¡los agentes de servicio al cliente estarán listos para llamarte y 
-                 ayudarte! Además, ¿sabes que puedes gestionar toda la información de tu plan por tu cuenta en el portal de Iron Club?
-            </p>
-
-        </div>
-        
-        <div class="padding1">
-            <img src="img/contactoChica.jpg" hspace="5" vspace="5" style="float: right;" width="590" height="311"/>
-            <label for="observaciones"> Nombre: </label>
-            <br/>	
-            <textarea style="resize: none;" rows="1" cols="80" name="observaciones"></textarea>
-            <br/>
-            <label for="observaciones"> Teléfono: </label>
-            <br/>	
-            <textarea style="resize: none;" rows="1" cols="80" name="observaciones"></textarea>  
-            <br/>
-            <label for="observaciones"> Email:  </label>
-            <br/>               
-            <textarea style="resize: none;" rows="1" cols="80" name="observaciones"></textarea>
-            <br/>
-            <br/>
-            <label for="observaciones"> Comentario:  </label>
-            <br/>       
-            <textarea style="resize: none;" rows="10" cols="80" name="observaciones"></textarea>
-    
-            <br/>
-            
-            <input type="submit" value="Enviar" />
-            <input type="reset" value="Borrar" />
-
-            </div>
-            <h6 style="text-align:center">
-                <a href="cookies.html" style="color:#979292;">Declaración de cookies</a> 
-                <a href="" style="color:#979292;">Declaración de privacidad</a>
-                <a href="" style="color:#979292;">Derechos de recesión</a>
-                <a href="" style="color:#979292;">Reglamento de videovigilancia</a>
-                <a href=""  style="color:#979292">Términos y condiciones</a>
-                <a href="" style="color:#979292;">Aviso Legal</a>
-            </h6>          
+        <br/>
+        <br/>	
+        <br/>
+        <input type="submit" value="Enviar" />
+        <input type="reset" value="Borrar" />
+       
+                        
     </body>
 </html>
