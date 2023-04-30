@@ -101,65 +101,13 @@
     
              }
 
+             img {
+               width: 100%;
+               height: auto;
 
-            /* CSS RESPONSIVO */
-            
-             /* pantallas > 1300px*/
-             @media only screen and (min-width : 2000px) {
-                body {
-                    width: 94%;
-                }
-                section {
-                    width: 70%;
-                }
-                aside {
-                    width: 29%;
-                }
-            }       
+           } 
 
-            @media only screen and (min-width : 1300px) {
-                body {
-                    width: 94%;
-                }
-                section {
-                    width: 65%;
-                }
-                aside {
-                    width: 29%;
-                }
-            }       
-
-            @media only screen and (max-width : 900px) {
-                body {
-                    width: 100%;
-                }
-                section {
-                    width: 70%;
-                }
-                aside {
-                    width: 100%;
-                }               
-                #section{
-                    display: none;
-                }
-            }            
-            
-            @media only screen and (max-width : 850px) {
-                body {
-                    width: 100%;
-                }
-                section {
-                    width: 70%;
-                }
-                aside {
-                    width: 100%;
-                }               
-                #section{
-                    display: none;
-                }
-            }              
-
-            .foto{
+           .foto{
                 width: 64%;
             }
 
@@ -181,10 +129,69 @@
            }
 
 
+            /* CSS RESPONSIVO */
+            
+             /* pantallas > 1300px*/
+             @media only screen and (min-width : 2000px) {
+                body {
+                    width: 94%;
+                }
+                section {
+                    width: 100%;
+                }
+                aside {
+                    width: 29%;
+                }
+            }       
+
+            @media only screen and (min-width : 1300px) {
+                body {
+                    width: 94%;
+                }
+                section {
+                    width: 100%;
+                }
+                aside {
+                    width: 29%;
+                }
+            }       
+
+            @media only screen and (max-width : 900px) {
+                body {
+                    width: 100%;
+                }
+                section {
+                    width: 100%;
+                }
+                aside {
+                    width: 100%;
+                }               
+                #section{
+                    display: none;
+                }
+            }            
+            
+            @media only screen and (max-width : 850px) {
+                body {
+                    width: 100%;
+                }
+                section {
+                    width: 100%;
+                }
+                aside {
+                    width: 100%;
+                }               
+                #section{
+                    display: none;
+                }
+            }              
+
+
         </style>
     </head>
     <body>
         <header>
+
             <h6 style="text-align:center" color: #fff >Consigue tu regalo exclusivo <a href=alta.html>¡Apúntate ahora!</a></h6>
 
                         <nav class="menuCSS3">
@@ -228,10 +235,61 @@
         </header>
         <main>
             <section>
+                
+
+                <img src="img/fondo3.jpg" alt="texto alternativo">
+
                 <h1>MEMBRESIA</h1> 
                 <img src="img/apuntate.jpg">
 
-                </div>               
+                <form action="procesarPeticion.jsp" method="get"></form>
+
+                <h1>SELECCIONA IRON CLUB</h1>
+                    <br> 
+                <div class="contenedor">
+                    <img src="img/gym2.jpg" />
+                    
+                    
+                    
+                    <div class="centrado"><label for="centro_irongym" >CENTROS IRON GYM: </label>
+                        <select name="centro_irongym">
+                            <option value="ALU" selected>Aluche</option>
+                            <option value="MOS">Móstoles</option>
+                            <option value="ALC" >Alcorcón</option>
+                            <option value="LEG">Leganés</option>
+                            <option value="FUE">Fuenlabrada</option>
+                            <option value="GET">Getafe</option>
+                        </select></div>
+                  </div>
+
+
+                <label for="tarifa"> <h1>SELECCIONA PLAN TARIFA</h1> </label>
+                <br/>
+                
+                <table >
+                    <tr>
+                        <td > <img id="img_tarifa" src="img/basic.jpg"> </td>
+                        <td ><img id="img_tarifa" src="img/premium.jpg"></td>
+                        <td ><img id="img_tarifa" src="img/ironGold.jpg"></td>
+                      </tr>
+                    <tr>
+                        <td><input type="radio" name="tarifa" value="S" /></td>
+                        <td><input type="radio" name="tarifa" value="C" /></td>
+                        <td><input type="radio" name="tarifa" value="V" checked/></td>
+                      </tr>
+                    </tr>
+                </table>
+
+
+
+
+
+
+
+            </section>
+
+
+                             
                       
         </main>
         <footer>
