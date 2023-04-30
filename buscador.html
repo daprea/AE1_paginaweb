@@ -9,9 +9,11 @@
                 padding: 0px;
                 margin: 0px;
                 font-family: Arial, Helvetica, sans-serif;
+                margin-top: 20px;
             }
             header {
-                height: 125px;
+                height: 200px;
+                width: 100%;
                 background-color:rgb(0, 0, 0);
                 color: #fff;
                 margin-bottom: 5px;
@@ -36,6 +38,7 @@
 
 	        .menuCSS3 a:hover {
 		        background-color: #000000;
+                width: 100%;
 	        }
 
 	        .menuCSS3 ul li ul {
@@ -82,6 +85,7 @@
             cursor: pointer;
             width: 100%;
             border: 2px solid black;
+            margin-top: 40px;
             }
             footer {
                 background-color: #f2f2f2;
@@ -92,7 +96,60 @@
             h6 {
                 bottom: 50px;
             }
-            
+
+            @media screen and (min-width: 1300px) {
+                body {
+                    max-width: 1300px;
+                    margin: 0 auto;
+                    width: 80%;
+                }
+            }
+            @media screen and (max-width: 768px) and (orientation: portrait) {
+                /* Para tablet en vertical */
+                body {
+                    font-size: 16px;
+                    padding: 10px;
+                    color: red;
+                }
+                .header {
+                    font-size: 24px;
+                    width: 80%;
+                }
+            }
+            @media screen and (min-width: 769px) and (max-width: 1024px) and (orientation: landscape) {
+                /* Para tablet en horizontal */
+                body {
+                     font-size: 14px;
+                     padding: 20px;
+                     color: red;
+                }
+                .header {
+                     font-size: 20px;
+                     width: 80%;
+                }
+            }@media screen and (max-width: 480px) and (orientation: portrait) {
+            /* Mvil en vertical */
+                body {
+                    font-size: 12px;
+                    padding: 5px;
+                    background-color: #30e70c;
+                }
+                .header {
+                    font-size: 18px;
+                }
+            }
+            @media screen and (min-width: 481px) and (max-width: 767px) and (orientation: landscape) {
+            /* Movil en horizontal */
+                body{
+                    font-size: 10px;
+                    padding: 15px;
+                    background-color: #30e70c;
+                }
+                .header {
+                    font-size: 16px;
+                   
+                }
+            }
         </style>
     </head>
     <body>
@@ -101,8 +158,10 @@
             <h5 style="text-align:center" color: #fff >Consigue tu regalo exclusivo <a href=alta.html>¡Apúntate ahora!</a></h6>
                      
                         <nav class="menuCSS3">
+                            
                             <ul>
-                                <li><a href="index.html">III</a>
+                            
+                                <li><a href="index.html">HOME</a>
                                 </li>
                                 <li><a href="iron.html">IRON</a></li>
                                 <li><a href="buscador.html">Buscador</a></li>
@@ -140,12 +199,12 @@
             <p>&nbsp;</p>
         </header>
         <section  style="width: 75%; margin-left: auto; margin-right: auto;">
-            <h1>Busca tu gimnasio más cercano</h1>
-            <section > 
-                <br><br>
+                <br><br><br><br>
                 <h3>Buscador de gimnasio en Maps :</h3>
+                <br><br><br><br>
                 <br>
                 <img id="maps" src="img/Captura de pantalla (153).png">
+                <br><br>
             </section>
             <setion id="a">
                 <div class="columna">

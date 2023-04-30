@@ -133,7 +133,7 @@
                 height: 450px;
                 /* Añadimos un fondo a d de color gris y con esas medidas*/
             }
-            @media screen and (max-width: 1102px) {
+            @media screen and (max-width: 1354px) {
                 #d{
                 background-color: rgb(231, 170, 170);
                 color: white;
@@ -142,7 +142,7 @@
                 /* Cuando camie el tamaño de la pantalla, cambiamos el color de fondo y el tamaño */
                 }
             }
-            @media screen and (max-width: 655px) {
+            @media screen and (max-width: 796px) {
                 #d{
                 background-color: rgb(0, 0, 0);
                 color: white;
@@ -170,9 +170,64 @@
             /* A los enlaces de ale ponemos color, nlineblcok para darles luego tamaño, texto en el centro
             y alineados en el centro del cuadro, con un tamaño de letra de 16 */
             }
+
+            @media screen and (min-width: 1300px) {
+                body {
+                    max-width: 1300px;
+                    margin: 0 auto;
+                    width: 80%;
+                }
+            }
+            @media screen and (max-width: 768px) and (orientation: portrait) {
+                /* Para tablet en vertical */
+                body {
+                    font-size: 16px;
+                    padding: 10px;
+                    color: red;
+                }
+                .header {
+                    font-size: 24px;
+                    width: 80%;
+                }
+            }
+            @media screen and (min-width: 769px) and (max-width: 1024px) and (orientation: landscape) {
+                /* Para tablet en horizontal */
+                body {
+                     font-size: 14px;
+                     padding: 20px;
+                     color: red;
+                }
+                .header {
+                     font-size: 20px;
+                     width: 80%;
+                }
+            }@media screen and (max-width: 480px) and (orientation: portrait) {
+            /* Mvil en vertical */
+                body {
+                    font-size: 12px;
+                    padding: 5px;
+                    background-color: #30e70c;
+                }
+                .header {
+                    font-size: 18px;
+                }
+            }
+            @media screen and (min-width: 481px) and (max-width: 767px) and (orientation: landscape) {
+            /* Movil en horizontal */
+                body{
+                    font-size: 10px;
+                    padding: 15px;
+                    background-color: #30e70c;
+                }
+                .header {
+                    font-size: 16px;
+                   
+                }
+            }
         </style>
     </head>
 
+    
     <body>
         <img src="img/fondo1.jpg" alt="foto de fondo">
         <header>
@@ -180,7 +235,7 @@
             
                         <nav class="menuCSS3">
                             <ul>
-                                <li><a href="index.html">III</a>
+                                <li><a href="index.html">HOME</a>
                                 </li>
                                 <li><a href="iron.html">IRON</a></li>
                                 <li><a href="buscador.html">Buscador</a></li>
