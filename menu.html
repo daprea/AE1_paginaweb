@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>MENU DESPLEGABLE</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            text-decoration: none;
+            list-style: none;
+            box-sizing: border-box;
+        }
+
+        nav{
+           background: rgb(45, 117, 24);
+           height: 80px;
+           width: 100%; 
+        }
+
+        .enlace{
+            position:absolute;
+            padding: 20px 50px;
+        }
+
+        .logo{
+            height: 40px;
+        }
+
+        nav ul{
+            float:right;
+            margin-right: 20px;
+        }
+
+        nav ul li {
+            display: inline-block;
+            line-height: 80px;
+            margin: 0 5px;
+        }
+
+        nav ul li a{
+            color:aliceblue;
+            font-size: 10px;
+            padding: 7px 13px;
+            border-radius: 3px;
+            text-transform: uppercase;
+        }
+
+        li a.active, li a:hover{
+            background: blue;
+            transition: .5s;
+        }
+
+        .checkbtn{
+            font-size: 30px;
+            color:aliceblue;
+            float: right;
+            line-height: 80px;
+            margin-right: 40px;
+            cursor: pointer;
+            display: none;
+        }
+
+        #check{
+            display: none;
+        }
+
+        section{
+            background: url(img/fotoPrincipal.png) no-repeat;
+            background-size: cover;
+            background-position: center center;
+            height: calc(100vh-80px);
+        }
+
+        @media(max-width:952px){
+            .enlace{
+                padding-left: 20px;
+            }
+            nav ul li a{
+                font-size:16px;
+            }
+        }
+
+        @media (max-width: 858px){
+            .checkbtn{
+                display:block
+            }
+            ul{
+                position: fixed;
+                width: 100%;
+                height: 100%;
+                background: gray;
+                top: 80px;
+                left: -100%;
+                text-align: center;
+                transition: all .5s;
+            }
+            nav ul li{
+                display: block;
+                margin: 50px 0;
+                line-height: 30px;
+            }
+            nav ul li a{
+                font-size: 20px;
+            }
+            li a:hover, li a.active{
+                background: none;
+                color:red;
+            }
+
+            #check:checked ~ ul{
+                left:0;
+            }
+        }
+
+    </style>
+
+</head>
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <a href="#" class="enlace">
+            <img src="img/logoGris2.png" alt="texto alternativo" class="logo">
+        <ul>
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="iron.html">Iron</a></li>
+            <li><a href="buscador.html">Buscador</a></li>
+            <li><a href="clases.html">Clases</a></li>
+            <li><a href="alta.html">Alta</a></li>
+        </ul>
+
+        </a>
+    </nav>
+</body>
+</html>
