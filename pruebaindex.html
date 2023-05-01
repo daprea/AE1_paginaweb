@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width",initial-scale="1.0">
     <title>MENU DESPLEGABLE</title>
+    <link rel="stylesheet" href="estilos.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
 </head>
     <style>
@@ -16,7 +17,11 @@
             text-decoration: none;
             list-style: none;
             box-sizing: border-box;
+            
         }
+
+
+    
 
         nav{
            background: rgb(0, 0, 0);
@@ -115,35 +120,93 @@
             }
         }
 
+        body {
+                background:#ffffff;
+                color:rgb(0, 0, 0);
+                font-size:20px;
+                font-family:sans-serif;
+                border: 1px solid #CCC;
+                padding: 5px;
+                width: 100%;
+                margin: 20px auto;
+
+            }
+
+            header {
+                height: 120px;
+                border: 1px solid #CCC;
+                background-color:rgb(0, 0, 0);
+                color: #fff;
+
+            }
+
+            section {
+                border: 1px solid #CCC;
+                width: 771px;
+                height: 460px;
+                float: left;
+                background-color:rgb(74, 12, 12);
+                color: rgb(0, 0, 0);
+            }
+
+            aside {
+                width: 365px;
+                float: right;
+                background-color:#000000;
+                color: #fff;
+            }
+
+            footer {
+                border: 1px solid #CCC;
+                clear: both;
+                background-color:rgb(181, 171,184 );
+            }
+
+            header, section, aside {
+                margin-bottom: 5px;
+            }
+
+            body, header, section, aside, footer {
+                border: solid 1px #ccc;
+            }
+
+            h6 { 
+                color: #000000; 
+                background-color:#ffffff;
+            }
+
+            p {
+                font-size: 18px;
+             }
+
     </style>
 
 
 <body>
-    <nav id="enu_movil">
-        <input type="checkbox" id="check">
-        <label for="check" class="checkbtn">
-            <i class="fas fa-bars"></i>
-        </label>
-        <a href="#" class="enlace">
-            <img src="img/logoGris2.png" alt="texto alternativo" class="logo">
-        <ul>
-            <li><a class="active" href="index.html">Home</a>
-                <ul>
-                    <li><a href="clases.html">Live</a></li>
-                    <li><a href="clases.html">Virtuales</a></li>
-                    <li><a href="clases.html">On-Demand</a></li>
-                </ul>
-            </li>
-            <li><a href="iron.html">Iron</a></li>
-            <li><a href="buscador.html">Buscador</a></li>
-            <li><a href="tarifas.html">Tarifas</a></li>
-            <li><a href="clases.html">Clases</a></li>
-            <li><a href="coach.html">Coach</a></li>
-            <li><a href="alta.html">Alta</a></li>
-        </ul>
+    <header>
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <a href="#" class="enlace">
+                <img src="img/logoGris2.png" alt="texto alternativo" class="logo">
+            <ul>
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="iron.html">Iron</a></li>
+                <li><a href="buscador.html">Buscador</a></li>
+                <li><a href="tarifas.html">Tarifas</a></li>
+                <li><a href="clases.html">Clases</a></li>
+                <li><a href="coach.html">Coach</a></li>
+                <li><a href="alta.html">Alta</a></li>
+            </ul>
+    
+            </a>
+        </nav>
 
-        </a>
-    </nav>
- 
+    </header>
+   
+
+
 </body>
 </html>

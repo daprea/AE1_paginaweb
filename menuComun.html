@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width",initial-scale="1.0">
     <title>MENU DESPLEGABLE</title>
+    <link rel="stylesheet" href="estilos.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
 </head>
     <style>
@@ -31,6 +32,7 @@
 
         .logo{
             height: 50px;
+            width: 50px; 
         }
 
         nav ul{
@@ -74,6 +76,13 @@
             height: calc(100vh-80px);
         }
 
+        h6{
+            color: rgb(0, 0, 0);
+            background-color: rgb(255, 255, 255);
+            padding-right: 88%;
+            
+        }
+
         @media(max-width:952px){
             .enlace{
                 padding-left: 20px;
@@ -115,25 +124,25 @@
             }
         }
 
+        img {
+               width: 100%;
+               height: auto;
+
+           } 
+
     </style>
 
 
 <body>
-    <nav id="enu_movil">
+    <nav>
         <input type="checkbox" id="check">
         <label for="check" class="checkbtn">
             <i class="fas fa-bars"></i>
         </label>
         <a href="#" class="enlace">
-            <img src="img/logoGris2.png" alt="texto alternativo" class="logo">
+            <img id="img_logo" src="img/logoGris2.png" alt="texto alternativo" class="logo">
         <ul>
-            <li><a class="active" href="index.html">Home</a>
-                <ul>
-                    <li><a href="clases.html">Live</a></li>
-                    <li><a href="clases.html">Virtuales</a></li>
-                    <li><a href="clases.html">On-Demand</a></li>
-                </ul>
-            </li>
+            <li><a class="active" href="index.html">Home</a></li>
             <li><a href="iron.html">Iron</a></li>
             <li><a href="buscador.html">Buscador</a></li>
             <li><a href="tarifas.html">Tarifas</a></li>
@@ -144,6 +153,10 @@
 
         </a>
     </nav>
- 
+
+    <h6 style="text-align:center"><a href="alta.html">¡Consigue regalo exclusivo! </a></h6>
+    <header>
+        <img src="img/fondo1.jpg">
+    </header>
 </body>
 </html>

@@ -3,22 +3,16 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>IRON</title>
+        <title>ALTA</title>
 
         <style>
-            * {
+           
+           * {
                 padding: 0px;
                 margin: 0px;
                 font-family: Arial, Helvetica, sans-serif;
-            }
-            header {
-                height: 125px;
-                background-color:rgb(0, 0, 0);
-                color: #fff;
-                margin-bottom: 5px;
+             }
 
-            }
-            
             .menuCSS3 ul {
 		        display: flex;
 		        padding: 0;
@@ -46,6 +40,8 @@
 	        .menuCSS3 ul li a:hover + ul, .menuCSS3 ul li ul:hover {
 		        display: block;
 	        }
+
+
             body {
                 background:#ffffff;
                 color:rgb(0, 0, 0);
@@ -55,16 +51,88 @@
                 padding: 5px;
                 width: 80%;
                 margin: 20px auto;
+
             }
+
+            header {
+                height: 120px;
+                border: 1px solid #CCC;
+                background-color:rgb(0, 0, 0);
+                color: #fff;
+
+            }
+
+            section {
+                border: 1px solid #CCC;
+                width: 590px;
+                height: 460px;
+                float: left;
+                background-color:rgb(255, 255, 255);
+                color: rgb(0, 0, 0);
+            }
+
+            aside {
+                width: 365px;
+                float: right;
+                background-color:#000000;
+                color: #fff;
+            }
+
+            footer {
+                border: 0px solid #CCC;
+                clear: both;
+            }
+
+            header, section, aside {
+                margin-bottom: 5px;
+            }
+
+            body, header, section, aside, footer {
+                border: solid 1px #ccc;
+            }
+
+           
+
+            p {
+                font-size: 18px;
+    
+             }
+
+             img {
+               width: 100%;
+               height: auto;
+
+           } 
+
+           .foto{
+                width: 64%;
+            }
+
+            .foto_aside{
+                width: 100%;
+            }
+
             h1{
-                background-color:  rgb(181, 171,184);
+                color:white;
+                background-color: rgb(181, 171,184);
+                padding-left: 2%;
+                
             }
-            h3{
-                border-bottom: 1px solid #000000;
-            }
-            h5 { 
-                color: #000000; 
-                background-color:#ffffff;
+
+            #img_tarifa{
+                width: 90%;
+                height: 60%;
+                float: center;
+           }
+
+           #img_redes{
+                width: 2%;
+                float: center;
+               
+           }
+           
+           h6 {
+                bottom: 50px;
             }
 
             img {
@@ -72,41 +140,71 @@
                height: auto;
 
            } 
+            /* CSS RESPONSIVO */
             
-           h1{
-                color:white;
-                background-color: rgb(181, 171,184);
-                padding-left: 2%;
-              
-            } 
+             /* pantallas > 1300px*/
+             @media only screen and (min-width : 2000px) {
+                body {
+                    width: 94%;
+                }
+                section {
+                    width: 100%;
+                }
+                aside {
+                    width: 29%;
+                }
+            }       
 
-            .padding1 {
-            color:white;
-               background-color: rgb(0, 0, 0);
-               padding: 50px;
-               
-            }
+            @media only screen and (min-width : 1300px) {
+                body {
+                    width: 94%;
+                }
+                section {
+                    width: 100%;
+                }
+                aside {
+                    width: 29%;
+                }
+            }       
 
-            .padding2 {
-            color:rgb(0, 0, 0);
-              background-color: rgb(255, 255, 255);
-              padding: 50px;
-              
-           }
+            @media only screen and (max-width : 900px) {
+                body {
+                    width: 100%;
+                }
+                section {
+                    width: 100%;
+                }
+                aside {
+                    width: 100%;
+                }               
+                #section{
+                    display: none;
+                }
+            }            
+            
+            @media only screen and (max-width : 850px) {
+                body {
+                    width: 100%;
+                }
+                section {
+                    width: 100%;
+                }
+                aside {
+                    width: 100%;
+                }               
+                #section{
+                    display: none;
+                }
+            }              
 
-           #img_redes{
-                width: 2%;
-                height:2%;
-                float: center;
-           }
 
         </style>
-
     </head>
     <body>
         <header>
+
             <h6 style="text-align:center" color: #fff >Consigue tu regalo exclusivo <a href=alta.html>¡Apúntate ahora!</a></h6>
-            
+
                         <nav class="menuCSS3">
                             <ul>
                                 <li><a href="index.html">HOME</a>
@@ -148,11 +246,14 @@
         </header>
         <main>
             <section>
+    
+                <img src="img/serIron3.jpg" alt="texto alternativo">
         
-            <img src="img/serIron3.jpg">
+        
             <h1>UNA NUEVA FILOSOFÍA</h1> 
             <div class="padding2">
                 <p>
+                    <br/>
                     La clave del éxito es la disciplina y la inspiración. Earnie Shavers se convirtió en una leyenda del deporte trabajando duro para alcanzar sus objetivos. <br/>
                     <br/>
                     Junto con su viejo amigo Rainer Schaller, propietario y CEO de RSG Group, al que pertenece la marca JOHN REED Fitness, crearon un espacio para todos los que se centran en sus objetivos.<br/>
@@ -160,24 +261,23 @@
                     
                 </p>
                 <br/>
-    
+                <img src="img/chicoFondoNegro2.jpg">
             </div>
             
-            <a href="https://www.instagram.com"></a><img src="img/iconoInsta.png" id="img_redes" width="20" height="20">
-            <a href="https://www.facebook.com"></a><img src="img/iconoFace.png" id="img_redes" width="20" height="20"> 
-            <a href="https://www.teamviewer.com/es/"></a><img src="img/iconoVideo.png" id="img_redes" width="20" height="20">
-            
-            <h6 style="text-align:center">
-                <a href="cookies.html" style="color:#979292;">Declaración de cookies</a> 
-                <a href="" style="color:#979292;">Declaración de privacidad</a>
-                <a href="" style="color:#979292;">Derechos de recesión</a>
-                <a href="" style="color:#979292;">Reglamento de videovigilancia</a>
-                <a href=""  style="color:#979292">Términos y condiciones</a>
-                <a href="" style="color:#979292;">Aviso Legal</a>
-            
+            <footer>
+             
+                <a href="https://www.instagram.com"> <img id="img_redes" src="img/iconoInsta.png" width="20" height="20"></a>
+                <a href="https://www.facebook.com"> <img id="img_redes" src="img/iconoFace.png" width="20" height="20"></a>
+                <a href="https://www.teamviewer.com/es/"> <img id="img_redes" src="img/iconoVideo.png" width="25" height="25"></a>
+            </footer>
 
-            </section>
-
-        </main>
+        <h6 style="text-align:center">
+        <a href="cookies.html" style="color:#979292;">Declaración de cookies</a> 
+        <a href="" style="color:#979292;">Declaración de privacidad</a>
+        <a href="" style="color:#979292;">Derechos de recesión</a>
+        <a href="" style="color:#979292;">Reglamento de videovigilancia</a>
+        <a href=""  style="color:#979292">Términos y condiciones</a>
+        <a href="" style="color:#979292;">Aviso Legal</a>
+    </h6>
     </body>
 </html>

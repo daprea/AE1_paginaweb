@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width",initial-scale="1.0">
     <title>MENU DESPLEGABLE</title>
+    <link rel="stylesheet" href="estilos.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
 </head>
     <style>
@@ -74,6 +75,12 @@
             height: calc(100vh-80px);
         }
 
+        img {
+               width: 100%;
+               height: auto;
+
+           } 
+
         @media(max-width:952px){
             .enlace{
                 padding-left: 20px;
@@ -119,7 +126,7 @@
 
 
 <body>
-    <nav id="enu_movil">
+    <nav>
         <input type="checkbox" id="check">
         <label for="check" class="checkbtn">
             <i class="fas fa-bars"></i>
@@ -127,13 +134,7 @@
         <a href="#" class="enlace">
             <img src="img/logoGris2.png" alt="texto alternativo" class="logo">
         <ul>
-            <li><a class="active" href="index.html">Home</a>
-                <ul>
-                    <li><a href="clases.html">Live</a></li>
-                    <li><a href="clases.html">Virtuales</a></li>
-                    <li><a href="clases.html">On-Demand</a></li>
-                </ul>
-            </li>
+            <li><a class="active" href="">Home</a></li>
             <li><a href="iron.html">Iron</a></li>
             <li><a href="buscador.html">Buscador</a></li>
             <li><a href="tarifas.html">Tarifas</a></li>
@@ -144,6 +145,9 @@
 
         </a>
     </nav>
- 
+    <main>
+        <section>
+            
+           
 </body>
 </html>

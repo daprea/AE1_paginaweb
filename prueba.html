@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width",initial-scale="1.0">
+    <title>MENU DESPLEGABLE</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+</head>
+    <style>
+
+        *{
+            padding: 0;
+            margin: 0;
+            text-decoration: none;
+            list-style: none;
+            box-sizing: border-box;
+        }
+
+        nav{
+           background: rgb(0, 0, 0);
+           height: 80px;
+           width: 100%; 
+        }
+
+        .enlace{
+            position:absolute;
+            padding: 20px 50px;
+        }
+
+        .logo{
+            height: 50px;
+            width: 50px; 
+        }
+
+        nav ul{
+            float:right;
+            margin-right: 20px;
+        }
+
+        nav ul li {
+            display: inline-block;
+            line-height: 80px;
+            margin: 0 5px;
+        }
+
+        nav ul li a{
+            color:aliceblue;
+            font-size: 10px;
+            padding: 7px 13px;
+            border-radius: 3px;
+            text-transform: uppercase;
+        }
+
+
+        .checkbtn{
+            font-size: 30px;
+            color:aliceblue;
+            float: right;
+            line-height: 80px;
+            margin-right: 40px;
+            cursor: pointer;
+            display: none;
+        }
+
+        #check{
+            display: none;
+        }
+
+        section{
+            
+            background-size: cover;
+            background-position: center center;
+            height: calc(100vh-80px);
+        }
+
+        h6{
+            color: rgb(0, 0, 0);
+            background-color: rgb(255, 255, 255);
+            padding-right: 88%;
+            
+        }
+
+        @media(max-width:952px){
+            .enlace{
+                padding-left: 20px;
+            }
+            nav ul li a{
+                font-size:16px;
+            }
+        }
+
+        @media (max-width: 858px){
+            .checkbtn{
+                display:block
+            }
+            ul{
+                position: fixed;
+                width: 100%;
+                height: 100%;
+                background: rgb(181, 171,184 );
+                top: 80px;
+                left: -100%;
+                text-align: center;
+                transition: all .5s;
+            }
+            nav ul li{
+                display: block;
+                margin: 50px 0;
+                line-height: 30px;
+            }
+            nav ul li a{
+                font-size: 20px;
+            }
+            li a:hover, li a.active{
+                background: none;
+                color:rgb(0, 0, 0);
+            }
+
+            #check:checked ~ ul{
+                left:0;
+            }
+        }
+
+        img {
+               width: 100%;
+               height: auto;
+
+           } 
+        h1{
+            color:white;
+            background-color: rgb(181, 171,184);
+            padding-left: 2%;
+                
+        }
+
+    </style>
+
+
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <a href="#" class="enlace">
+            <img id="img_logo" src="img/logoGris2.png" alt="texto alternativo" class="logo">
+        <ul>
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="iron.html">Iron</a></li>
+            <li><a href="buscador.html">Buscador</a></li>
+            <li><a href="tarifas.html">Tarifas</a></li>
+            <li><a href="clases.html">Clases</a></li>
+            <li><a href="coach.html">Coach</a></li>
+            <li><a href="alta.html">Alta</a></li>
+        </ul>
+
+        </a>
+    </nav>
+
+    <h6 style="text-align:center"><a href="alta.html">¡Consigue regalo exclusivo! </a></h6>
+    <header>
+        <img src="img/fondo3.jpg">
+    </header>
+    <section>
+
+        <h1>MEMBRESIA</h1> 
+        <img src="img/apuntate.jpg">
+
+        <form action="procesarPeticion.jsp" method="get"></form>
+
+        
+            <h1>SELECCIONA IRON CLUB</h1>
+            <br>
+            <div class="contenedor">
+            
+                
+                <div class="centrado"><label for="centro_irongym" >CENTROS IRON GYM: </label>
+                    <select name="centro_irongym">
+                        <option value="ALU" selected>Aluche</option>
+                        <option value="MOS">Móstoles</option>
+                        <option value="ALC" >Alcorcón</option>
+                        <option value="LEG">Leganés</option>
+                        <option value="FUE">Fuenlabrada</option>
+                        <option value="GET">Getafe</option>
+                    </select></div>
+                    <img src="img/gym2.jpg" />
+              </div>
+
+
+        <br/>
+        <label for="tarifa"> <h1>SELECCIONA PLAN TARIFA</h1> </label>
+        <br/>
+        
+        <table >
+            <tr>
+                <td > <img id="img_tarifa" src="img/basic.jpg"> </td>
+                <td ><img id="img_tarifa" src="img/premium.jpg"></td>
+                <td ><img id="img_tarifa" src="img/ironGold.jpg"></td>
+              </tr>
+            <tr>
+                <td><input type="radio" name="tarifa" value="S" /></td>
+                <td><input type="radio" name="tarifa" value="C" /></td>
+                <td><input type="radio" name="tarifa" value="V" checked/></td>
+              </tr>
+            </tr>
+        </table>
+
+        <h1>REGISTRO</h1>
+        <br/>
+        <div class="padding1">
+            <h2>Datos Personales</h2>
+            <fieldset>
+                <label for="sexo"></label>
+                
+                <input type="radio" name="sexo" value="S" checked/>Hombre
+                <input type="radio" name="sexo" value="C" />Mujer	
+                <input type="radio" name="sexo" value="V" />Otros	
+                <br />
+                <br/>
+                <label for="nombre">Nombre: </label>
+                <input id="nombre" type="text" name="nombre" />
+                <label for="apellidouno">Primer Apellido: </label>
+                <input id="apellidouno" type="text" name="apellidouno" />
+                <label for="apellidos">Segundo Apellido: </label>
+                <input id="apellidodos" type="text" name="apellidodos" />
+                <br/>
+                <br/>
+                <label for="date">Fecha de nacimiento</label>
+                <input type="date">
+                <label for="dni">Dni: </label>
+                <input id="dni" type="text" name="dni" />
+                <label for="direccion">Dirección: </label>
+                <input id="direccion" type="text" name="direccion" />
+                <br/>
+                <br/> 
+                <label for="tf">Teléfono: </label>
+                <input id="tf" type="text" name="tf" />
+                <label for="email">Email: </label>
+                <input id="email" type="text" name="email" />
+                <label for="pass">Password: </label>
+                <input id="pass" type="password" name="pass" />
+                <br/>
+                <br/>
+                <input id="identificador" type="hidden" name="identificador" value="123"/>
+                <br/>
+
+            </fieldset>
+        </br>
+        <label for="terminos">¿Acepta los terminos de uso? </label>
+        He leido y acepto los terminos de uso <input type="checkbox" name="terminos" value="Y" />
+      <br/>	 
+      <br/>	
+    
+        <a href="confirmacionAlta.html"><input type="button" value="Confirmar"></a>
+        
+    </div>
+<br/>
+    <a href="https://www.instagram.com"> <img src="img/iconoInsta.png" id="img_rr" width="20" height="20"></a>
+    <a href="https://www.facebook.com"> <img src="img/iconoFace.png" id="img_rr" width="20" height="20"></a>
+    <a href="https://www.teamviewer.com/es/"> <img src="img/iconoVideo.png" id="img_rr" width="20" height="20"></a>
+      <br/>	
+
+    </form>
+    <h6 style="text-align:center">
+        <a href="cookies.html" style="color:#979292;">Declaración de cookies</a> 
+        <a href="" style="color:#979292;">Declaración de privacidad</a>
+        <a href="" style="color:#979292;">Derechos de recesión</a>
+        <a href="" style="color:#979292;">Reglamento de videovigilancia</a>
+        <a href=""  style="color:#979292">Términos y condiciones</a>
+        <a href="" style="color:#979292;">Aviso Legal</a>
+    </h6>
+    <br/>
+</section>
+
+
+</body>
+</html>
