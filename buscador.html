@@ -3,23 +3,16 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>BUSCADOR DE IRON GYM</title>
+        <title>BUSCADOR</title>
+
         <style>
-            * {
+           
+           * {
                 padding: 0px;
                 margin: 0px;
                 font-family: Arial, Helvetica, sans-serif;
-                margin-top: 20px;
-            }
-            header {
-                height: 200px;
-                width: 100%;
-                background-color:rgb(0, 0, 0);
-                color: #fff;
-                margin-bottom: 5px;
+             }
 
-            }
-            
             .menuCSS3 ul {
 		        display: flex;
 		        padding: 0;
@@ -38,7 +31,6 @@
 
 	        .menuCSS3 a:hover {
 		        background-color: #000000;
-                width: 100%;
 	        }
 
 	        .menuCSS3 ul li ul {
@@ -48,6 +40,8 @@
 	        .menuCSS3 ul li a:hover + ul, .menuCSS3 ul li ul:hover {
 		        display: block;
 	        }
+
+
             body {
                 background:#ffffff;
                 color:rgb(0, 0, 0);
@@ -57,23 +51,92 @@
                 padding: 5px;
                 width: 80%;
                 margin: 20px auto;
+
             }
-            h1{
-                background-color:  rgb(181, 171,184);
+
+            header {
+                height: 120px;
+                border: 1px solid #CCC;
+                background-color:rgb(0, 0, 0);
+                color: #fff;
+
             }
-            h3{
-                border-bottom: 1px solid #000000;
+
+            section {
+                border: 1px solid #CCC;
+                width: 590px;
+                height: 460px;
+                float: left;
+                background-color:rgb(255, 255, 255);
+                color: rgb(0, 0, 0);
             }
-           
+
+            aside {
+                width: 365px;
+                float: right;
+                background-color:#000000;
+                color: #fff;
+            }
+
+            footer {
+                border: 0px solid #ffffff;
+                clear: both;
+            }
+
+            header, section, aside {
+                margin-bottom: 5px;
+            }
+
+            body, header, section, aside, footer {
+                border: solid 1px #ccc;
+            }           
+
+            p {
+                font-size: 18px;
+    
+             }
+
             h5 { 
-                color: rgb(181, 171,184 );
+                color: rgb(181, 171,184);
                 background-color:#000000;
             }
 
-            h6 { 
-                color: #000000; 
-                background-color:#ffffff;
-            }   
+             img {
+               width: 100%;
+               height: auto;
+
+           } 
+
+           .foto{
+                width: 64%;
+            }
+
+            .foto_aside{
+                width: 100%;
+            }
+
+            h1{
+                color:white;
+                background-color: rgb(181, 171,184);
+                padding-left: 2%;
+                
+            }
+
+            #img_tarifa{
+                width: 90%;
+                height: 60%;
+                float: center;
+           }
+
+           #img_rr{
+                width: 2%;
+                float: center;
+           }
+           
+           h6 {
+                bottom: 50px;
+            }
+
 
             #a img{
                 max-width: 450px;
@@ -104,59 +167,64 @@
                 bottom: 50px;
             }
 
-            @media screen and (min-width: 1300px) {
+            /* CSS RESPONSIVO */
+            
+             /* pantallas > 1300px*/
+             @media only screen and (min-width : 2000px) {
                 body {
-                    max-width: 1300px;
-                    margin: 0 auto;
-                    width: 80%;
+                    width: 94%;
                 }
-            }
-            @media screen and (max-width: 768px) and (orientation: portrait) {
-                /* Para tablet en vertical */
+                section {
+                    width: 100%;
+                }
+                aside {
+                    width: 29%;
+                }
+            }       
+
+            @media only screen and (min-width : 1300px) {
                 body {
-                    font-size: 16px;
-                    padding: 10px;
-                    color: red;
+                    width: 94%;
                 }
-                .header {
-                    font-size: 24px;
-                    width: 80%;
+                section {
+                    width: 100%;
                 }
-            }
-            @media screen and (min-width: 769px) and (max-width: 1024px) and (orientation: landscape) {
-                /* Para tablet en horizontal */
+                aside {
+                    width: 29%;
+                }
+            }       
+
+            @media only screen and (max-width : 900px) {
                 body {
-                     font-size: 14px;
-                     padding: 20px;
-                     color: red;
+                    width: 100%;
                 }
-                .header {
-                     font-size: 20px;
-                     width: 80%;
+                section {
+                    width: 100%;
                 }
-            }@media screen and (max-width: 480px) and (orientation: portrait) {
-            /* Mvil en vertical */
+                aside {
+                    width: 100%;
+                }               
+                #section{
+                    display: none;
+                }
+            }            
+            
+            @media only screen and (max-width : 850px) {
                 body {
-                    font-size: 12px;
-                    padding: 5px;
-                    background-color: #30e70c;
+                    width: 100%;
                 }
-                .header {
-                    font-size: 18px;
+                section {
+                    width: 100%;
                 }
-            }
-            @media screen and (min-width: 481px) and (max-width: 767px) and (orientation: landscape) {
-            /* Movil en horizontal */
-                body{
-                    font-size: 10px;
-                    padding: 15px;
-                    background-color: #30e70c;
+                aside {
+                    width: 100%;
+                }               
+                #section{
+                    display: none;
                 }
-                .header {
-                    font-size: 16px;
-                   
-                }
-            }
+            }              
+
+
         </style>
     </head>
     <body>
@@ -203,19 +271,10 @@
             
             <p>&nbsp;</p>
         </header>
-
-
-        <br/>
-        <section>
-
-            
-        </section>
-
-        <section  style="width: 75%; margin-left: auto; margin-right: auto;">
-                <br><br><br><br>
-                <h3>Buscador de gimnasio en Maps :</h3>
-                <br><br><br><br>
-                <br>
+        <main>
+            <section>
+                <h1>Buscador de gimnasio en Maps :</h1>
+             
                 <img id="maps" src="img/Captura de pantalla (153).png">
                 <br><br>
             </section>
@@ -284,26 +343,25 @@
                     <br><img src="img/OIP.jpeg"><br><br>
                     </div>
                 </div>
-            <section id="e">
+         
+              
 
 
-            </section>
-            <footer>
-                <img src="img/iconoInsta.png" id="img_rr" width="20" height="20">
-                <img src="img/iconoFace.png" id="img_rr" width="20" height="20"> 
-                <img src="img/iconoVideo.png" id="img_rr" width="25" height="25">
-                
-                
-                
-            </footer>
-        <h6 style="text-align:center">
-            <a href="cookies.html" style="color:#979292;">Declaración de cookies</a> 
-            <a href="" style="color:#979292;">Declaración de privacidad</a>
-            <a href="" style="color:#979292;">Derechos de recesión</a>
-            <a href="" style="color:#979292;">Reglamento de videovigilancia</a>
-            <a href=""  style="color:#979292">Términos y condiciones</a>
-            <a href="" style="color:#979292;">Aviso Legal</a>
-        </h6>
-    </body>
-</html>
-       
+                </section>
+                <footer>
+                    <img src="img/iconoInsta.png" id="img_rr" width="20" height="20">
+                    <img src="img/iconoFace.png" id="img_rr" width="20" height="20"> 
+                    <img src="img/iconoVideo.png" id="img_rr" width="25" height="25">
+                    
+                  
+                </footer>
+            <h6 style="text-align:center">
+                <a href="cookies.html" style="color:#979292;">Declaración de cookies</a> 
+                <a href="" style="color:#979292;">Declaración de privacidad</a>
+                <a href="" style="color:#979292;">Derechos de recesión</a>
+                <a href="" style="color:#979292;">Reglamento de videovigilancia</a>
+                <a href=""  style="color:#979292">Términos y condiciones</a>
+                <a href="" style="color:#979292;">Aviso Legal</a>
+            </h6>
+        </body>
+    </html>
