@@ -4,6 +4,9 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>CONTACTO</title>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+        <link rel="stylesheet" media="screen and (max-width: 1299px)" href="menu_movil.css" />
+        <link rel="stylesheet" media="screen and (max-width: 850px)" href="menu_movil.css" />
     <style>
              * {
                padding: 0px;
@@ -80,49 +83,138 @@
                margin-bottom: 15px;
             }
 
+             /* CSS RESPONSIVO */
+             /* CSS RESPONSIVO */
+             @media only screen and (min-width : 2000px) {
+                body {
+                    width: 94%;
+                }
+                section {
+                    width: 70%;
+                }
+                aside {
+                    width: 29%;
+                }
+                #menu{
+                    display: inline;
+                }   
+                #menu_movil{
+                    display: none;
+                } 
+            }       
+
+            /* pantallas > 1300px*/
+
+            @media only screen and (min-width : 1300px) {
+                body {
+                    width: 94%;
+                }
+                section {
+                    width: 100%;
+                }
+                #menu{
+                    display: inline;
+                }   
+                #menu_movil{
+                    display: none;
+                }       
+            }       
+
+
+            @media only screen and (max-width : 1299px) {
+                body {
+                    width: 100%;
+                }
+                section {
+                    width: 100%;
+                }              
+                #menu{
+                    display: none;
+                }   
+                #menu_movil{
+                    display: inline;
+                }       
+            }            
+            
+            @media only screen and (max-width : 850px) {
+                body {
+                    width: 100%;
+                }
+                section {
+                    width: 100%;
+                } 
+                #menu{
+                    display: none;
+                }   
+                #menu_movil{
+                    display: inline;
+                }      
+            } 
+
     </style>
 
     </head>
     <body>
         <header>
-            <h6 style="text-align:center" color: #fff >Consigue tu regalo exclusivo <a href="alta.html">¡Apúntate ahora!</a></h6>
-            
-                        <nav class="menuCSS3">
+            <h5 style="text-align:center" color: #fff >Consigue tu regalo exclusivo <a href=alta.html>¡Apúntate ahora!</a></h5>
+
+                <nav id="menu" class="menuCSS3">
+                    <ul>
+                        <li><a href="index.html">HOME</a>
+                        </li>
+                        <li><a href="iron.html">IRON</a></li>
+                        <li><a href="buscador.html">Buscador</a></li>
+                        <li><a href="tarifas.html">Tarifas</a>
                             <ul>
-                                <li><a href="index.html">HOME</a>
-                                </li>
-                                <li><a href="iron.html">IRON</a></li>
-                                <li><a href="buscador.html">Buscador</a></li>
-                                <li><a href="tarifas.html">Tarifas</a>
-                                    <ul>
-                                        <li><a href="tarifas.html">Basic</a></li>
-                                        <li><a href="tarifas.html">Premium</a></li>
-                                        <li><a href="tarifas.html">Iron Gold</a></li>
-                                    </ul>
-                                </li>
-                
-                                <li><a href="clases.html">Clases</a>
-                                    <ul>
-                                        <li><a href="clases.html">Live</a></li>
-                                        <li><a href="clases.html">Virtuales</a></li>
-                                        <li><a href="clases.html">On-Demand</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="coach.html">Coach</a>
-                                    <ul>
-                                        <li><a href="coach.html">Presencial</a></li>
-                                        <li><a href="coach.html">On line</a></li>
-                                    </ul>
-                                </li>  
-                                <li><a href="alta.html">Atla</a>
-                                    <ul>
-                                        <li><a href="alta.html">Afiliación</a></li>
-                                        <li><a href="contacto.html">Contacto</a></li>
-                                    </ul>
-                                </li>
-                                
+                                <li><a href="tarifas.html">Basic</a></li>
+                                <li><a href="tarifas.html">Premium</a></li>
+                                <li><a href="tarifas.html">Iron Gold</a></li>
                             </ul>
-                        </nav>
+                        </li>
+        
+                        <li><a href="clases.html">Clases</a>
+                            <ul>
+                                <li><a href="clases.html">Live</a></li>
+                                <li><a href="clases.html">Virtuales</a></li>
+                                <li><a href="clases.html">On-Demand</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="coach.html">Coach</a>
+                            <ul>
+                                <li><a href="coach.html">Presencial</a></li>
+                                <li><a href="coach.html">On line</a></li>
+                            </ul>
+                        </li>  
+                        <li><a href="alta.html">Atla</a>
+                            <ul>
+                                <li><a href="alta.html">Afiliación</a></li>
+                                <li><a href="contacto.html">Contacto</a></li>
+                            </ul>
+                        </li>
+                        
+                    </ul>
+                </nav>
+
+                <nav id="menu_movil">
+                    <input type="checkbox" id="check">
+                    <label for="check" class="checkbtn">
+                        <i class="fas fa-bars"></i>
+                    </label>
+                    <a href="index.html" class="enlace">
+                        <img id="img_logo" src="img/logoGris2.png" alt="texto alternativo" class="logo">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="iron.html">Iron</a></li>
+                        <li><a href="buscador.html">Buscador</a></li>
+                        <li><a href="tarifas.html">Tarifas</a></li>
+                        <li><a href="clases.html">Clases</a></li>
+                        <li><a href="coach.html">Coach</a></li>
+                        <li><a href="alta.html">Alta</a></li>
+                        <li><a class="active" href="contacto.html">Contacto</a></li>
+                    </ul>
+            
+                    </a>
+                </nav>
             
             <p>&nbsp;</p>
         </header>
@@ -171,13 +263,7 @@
                 <a href="https://www.teamviewer.com/es/"> <img id="img_redes" src="img/iconoVideo.png" width="25" height="25"></a>
             </footer>
 
-        <h6 style="text-align:center">
-        <a href="" style="color:#979292;">Declaración de cookies</a> 
-        <a href="" style="color:#979292;">Declaración de privacidad</a>
-        <a href="" style="color:#979292;">Derechos de recesión</a>
-        <a href="" style="color:#979292;">Reglamento de videovigilancia</a>
-        <a href=""  style="color:#979292">Términos y condiciones</a>
-        <a href="" style="color:#979292;">Aviso Legal</a>
+       
     </h6>          
     </body>
 </html>

@@ -5,7 +5,9 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>TARIFAS</title>
-
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+        <link rel="stylesheet" media="screen and (max-width: 1299px)" href="menu_movil.css" />
+        <link rel="stylesheet" media="screen and (max-width: 850px)" href="menu_movil.css" />
         <style>
             * {
                 padding: 0px;
@@ -138,97 +140,68 @@
                 height: 450px;
                 /* Añadimos un fondo a d de color gris y con esas medidas*/
             }
-            @media screen and (max-width: 1354px) {
-                #d{
-                background-color: rgb(231, 170, 170);
-                color: white;
-                width: 100%;
-                height: 780px;
-                /* Cuando camie el tamaño de la pantalla, cambiamos el color de fondo y el tamaño */
+            @media only screen and (min-width : 2000px) {
+                body {
+                    width: 94%;
                 }
-            }
-            @media screen and (max-width: 796px) {
-                #d{
-                background-color: rgb(0, 0, 0);
-                color: white;
-                width: 100%;
-                height: 1120px;
-                /* cuando cambie otra vez el ancho, le cambiamos el color y el largo al fondo */
+                section {
+                    width: 100%;
                 }
-            }
+                #menu{
+                    display: inline;
+                }   
+                #menu_movil{
+                    display: none;
+                } 
+            }       
 
-            #d img{
-                margin-left: 5%;
-                margin-right: 5%;
-                /* le ponemos margne a las imagenes de d */
-            }
-            #enlace a{
-            display: inline-block;
-            background-color: rgb(132, 65, 172);
-            color: white;
-            text-align: center;
-            line-height: 50px;
-            margin: 20px;
-            width: 200px;
-	        height: 50px;
-            font-size: 16px;
-            /* A los enlaces de ale ponemos color, nlineblcok para darles luego tamaño, texto en el centro
-            y alineados en el centro del cuadro, con un tamaño de letra de 16 */
-            }
+            /* pantallas > 1300px*/
 
-            @media screen and (min-width: 1300px) {
+            @media only screen and (min-width : 1300px) {
                 body {
-                    max-width: 1300px;
-                    margin: 0 auto;
-                    width: 80%;
+                    width: 94%;
                 }
-            }
-            @media screen and (max-width: 768px) and (orientation: portrait) {
-                /* Para tablet en vertical */
+                section {
+                    width: 100%;
+                }
+                #menu{
+                    display: inline;
+                }   
+                #menu_movil{
+                    display: none;
+                }       
+            }       
+
+
+            @media only screen and (max-width : 1299px) {
                 body {
-                    font-size: 16px;
-                    padding: 10px;
-                    color: red;
+                    width: 100%;
                 }
-                .header {
-                    font-size: 24px;
-                    width: 80%;
-                }
-            }
-            @media screen and (min-width: 769px) and (max-width: 1024px) and (orientation: landscape) {
-                /* Para tablet en horizontal */
+                section {
+                    width: 100%;
+                }    
+                #menu{
+                    display: none;
+                }   
+                #menu_movil{
+                    display: inline;
+                }       
+            }            
+            
+            @media only screen and (max-width : 900px) {
                 body {
-                     font-size: 14px;
-                     padding: 20px;
-                     color: red;
+                    width: 100%;
                 }
-                .header {
-                     font-size: 20px;
-                     width: 80%;
-                }
-            }@media screen and (max-width: 480px) and (orientation: portrait) {
-            /* Mvil en vertical */
-                body {
-                    font-size: 12px;
-                    padding: 5px;
-                    background-color: #30e70c;
-                }
-                .header {
-                    font-size: 18px;
-                }
-            }
-            @media screen and (min-width: 481px) and (max-width: 767px) and (orientation: landscape) {
-            /* Movil en horizontal */
-                body{
-                    font-size: 10px;
-                    padding: 15px;
-                    background-color: #30e70c;
-                }
-                .header {
-                    font-size: 16px;
-                   
-                }
-            }
+                section {
+                    width: 100%;
+                }  
+                #menu{
+                    display: none;
+                }   
+                #menu_movil{
+                    display: inline;
+                }      
+            }   
         </style>
     </head>
 
@@ -238,7 +211,7 @@
         <header>
             <h5 style="text-align:center" color: #fff >Consigue tu regalo exclusivo <a href=alta.html>¡Apúntate ahora!</a></h5>
             
-                        <nav class="menuCSS3">
+                        <nav id="menu" class="menuCSS3">
                             <ul>
                                 <li><a href="index.html">HOME</a>
                                 </li>
@@ -274,6 +247,27 @@
                                 
                             </ul>
                         </nav>
+
+                        <nav id="menu_movil">
+                            <input type="checkbox" id="check">
+                            <label for="check" class="checkbtn">
+                                <i class="fas fa-bars"></i>
+                            </label>
+                            <a href="index.html" class="enlace">
+                                <img id="img_logo" src="img/logoGris2.png" alt="texto alternativo" class="logo">
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="iron.html">Iron</a></li>
+                                <li><a href="buscador.html">Buscador</a></li>
+                                <li><a class="active" href="tarifas.html">Tarifas</a></li>
+                                <li><a href="clases.html">Clases</a></li>
+                                <li><a href="coach.html">Coach</a></li>
+                                <li><a href="alta.html">Alta</a></li>
+                                <li><a href="contacto.html">Contacto</a></li>
+                            </ul>
+                    
+                            </a>
+                        </nav>
             
             <p>&nbsp;</p>
            
@@ -287,7 +281,7 @@
                 <h1>TARIFAS</h1>
                 <main>
                     </div>
-                    <div style="width: 75%; height:500px; margin-left: auto; margin-right: auto;">
+                    <div >
                         <br><br>
                         <h2>COMPLETA TU INSCRIPCIÓN</h2>
                         <br/>
@@ -300,11 +294,12 @@
                         <br/>
                         <p>Echa un vistazo a nuestros extras para hacer quen tus sesiones de entrenamiento en nuestros gimnasios sean aún mejores.</p>
                         <br><br>
-                        <div id="enlace">
+                        <div id="enlace" style="text-align: center;">
                             <a href="iron.hotm">▼ IRON Sports  ▼</a>
                             <a href="clases.html">▼ Personal Class ▼</a>
                             <a href="coach.html">▼ Personal Coach ▼</a>
                         </div>
+                        <br><br>
                     </div>
                 </main>
                 <div id="a"; style="width: 75%; margin-left: auto; margin-right: auto;">COMPARA NUESTRAS SUSCRIPCIONES</div>
@@ -373,28 +368,17 @@
                         <a href="alta.html">▼ APUNTATE AQUI ▼</a>
                     </div>
                 <br>
-                <br>
-                <div id="d"  style="text-align: center;">
+                <br>    
+            </section>
+            <aside>
+                <div style="background-color: #000000;">
                     <h1>IRON GYM</h1>
                     <br/>
-                    <img src="img/chicaFondoBlanco1.jpg" style="max-width: 250px; float: left;">
-                    <img src="img/chicotableta.jpg" style="max-width: 250px; display: inline-block;">
-                    <img src="img/chicaCorriendoFondoAzul2.png" style="max-width: 250px; float: right;">
+                    <img src="img/chicaFondoBlanco1.jpg" style="width: 28%; margin-left: 3%;">
+                    <img src="img/chicotableta.jpg" style="width: 33%;">
+                    <img src="img/chicaCorriendoFondoAzul2.png" style="width: 31%;">
                   </div>
-        
-        
-            <h6 style="text-align:center">
-                <a href="" style="color:#979292;">Declaración de cookies</a> 
-                <a href="" style="color:#979292;">Declaración de privacidad</a>
-                <a href="" style="color:#979292;">Derechos de recesión</a>
-                <a href="" style="color:#979292;">Reglamento de videovigilancia</a>
-                <a href=""  style="color:#979292">Términos y condiciones</a>
-                <a href="" style="color:#979292;">Aviso Legal</a>
-            </h6>
-    
-
-    
-            </section>
+            </aside>
 
         </main>
         

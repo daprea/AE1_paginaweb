@@ -3,7 +3,9 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>PAGINIA INICIO</title>
-    
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+        <link rel="stylesheet" media="screen and (max-width: 1299px)" href="menu_movil.css" />
+        <link rel="stylesheet" media="screen and (max-width: 850px)" href="menu_movil.css" />
         <style>
            
             * {
@@ -45,7 +47,6 @@
                 color:rgb(0, 0, 0);
                 font-size:20px;
                 font-family:sans-serif;
-                border: 1px solid #CCC;
                 padding: 5px;
                 width: 95%;
                 margin: 5px auto;
@@ -88,7 +89,7 @@
                 margin-bottom: 5px;
             }
 
-            body, header, section, aside, footer {
+            header, section, aside, footer {
                 border: solid 1px #ccc;
             }
 
@@ -116,43 +117,81 @@
             
 
             /* CSS RESPONSIVO */
-            @media screen and (max-width: 980px) {
+
+            @media only screen and (min-width : 2000px) {
                 body {
                     width: 94%;
                 }
                 section {
-                    width: 65%;
+                    width: 70%;
                 }
                 aside {
-                    width: 30%;
+                    width: 29%;
                 }
-            }
-
-            @media screen and (max-width: 700px) {
-                section {
-                    width: auto;
-                    float: none;
-                }
-                aside {
-                    width: auto;
-                    float: none;
-                }
-            }
-
-            @media screen and (max-width: 480px) {
-                header {
-                    height: auto;
-                }
-                h1 {
-                    font-size: 24px;
-                }
-                aside {
+                #menu{
+                    display: inline;
+                }   
+                #menu_movil{
                     display: none;
+                } 
+            }       
+
+            /* pantallas > 1300px*/
+
+            @media only screen and (min-width : 1300px) {
+                body {
+                    width: 94%;
                 }
-                ection {
-                width: 100%;
+                section {
+                    width: 69%;
                 }
-            }
+                aside{
+                    width: 30%;
+                } 
+                #menu{
+                    display: inline;
+                }   
+                #menu_movil{
+                    display: none;
+                }       
+            }       
+
+
+            @media only screen and (max-width : 1299px) {
+                body {
+                    width: 100%;
+                }
+                section {
+                    width: 69%;
+                }
+                aside{
+                    width: 30%;
+                }       
+                #menu{
+                    display: none;
+                }   
+                #menu_movil{
+                    display: inline;
+                }       
+            }            
+            
+            @media only screen and (max-width : 900px) {
+                body {
+                    width: 100%;
+                }
+                section {
+                    width: 100%;
+                } 
+                aside{
+                    width: 100%;
+                }    
+                #menu{
+                    display: none;
+                }   
+                #menu_movil{
+                    display: inline;
+                }      
+            }     
 
         </style>
     </head>
@@ -162,7 +201,7 @@
         <header>
             <h5 style="text-align:center" >Consigue tu regalo exclusivo <a href=alta.html>¡Apúntate ahora!</a></h5>
             
-                        <nav class="menuCSS3">
+                        <nav id="menu" class="menuCSS3">
                             <ul>
                                 <li><a href="index.html">HOME</a>
                                 </li>
@@ -199,7 +238,26 @@
                             </ul>
                         </nav>
 
-                        
+                        <nav id="menu_movil">
+                            <input type="checkbox" id="check">
+                            <label for="check" class="checkbtn">
+                                <i class="fas fa-bars"></i>
+                            </label>
+                            <a href="index.html" class="enlace">
+                                <img id="img_logo" src="img/logoGris2.png" alt="texto alternativo" class="logo">
+                            <ul>
+                                <li><a class="active" href="index.html">Home</a></li>
+                                <li><a href="iron.html">Iron</a></li>
+                                <li><a href="buscador.html">Buscador</a></li>
+                                <li><a href="tarifas.html">Tarifas</a></li>
+                                <li><a href="clases.html">Clases</a></li>
+                                <li><a href="coach.html">Coach</a></li>
+                                <li><a href="alta.html">Alta</a></li>
+                                <li><a href="contacto.html">Contacto</a></li>
+                            </ul>
+                    
+                            </a>
+                        </nav>
             
             <p>&nbsp;</p>
         </header>
@@ -242,15 +300,8 @@
                 <a href="https://www.teamviewer.com/es/"> <img src="img/iconoVideo.png" width="25" height="25"></a>
             </footer>
 
-        <h6 style="text-align:center">
-        <a href="" style="color:#979292;">Declaración de cookies</a> 
-        <a href="" style="color:#979292;">Declaración de privacidad</a>
-        <a href="" style="color:#979292;">Derechos de recesión</a>
-        <a href="" style="color:#979292;">Reglamento de videovigilancia</a>
-        <a href=""  style="color:#979292">Términos y condiciones</a>
-        <a href="" style="color:#979292;">Aviso Legal</a>
-    </h6>
-    </body>
+        
+     </body>
 </html>
 
 
