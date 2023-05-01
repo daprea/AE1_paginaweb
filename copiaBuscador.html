@@ -3,10 +3,11 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>CLASES</title>
+        <title>ALTA</title>
 
         <style>
-          * {
+           
+           * {
                 padding: 0px;
                 margin: 0px;
                 font-family: Arial, Helvetica, sans-serif;
@@ -63,10 +64,10 @@
 
             section {
                 border: 1px solid #CCC;
-                width: 100%;
+                width: 590px;
                 height: 460px;
                 float: left;
-                background-color:rgb(181, 171, 184);
+                background-color:rgb(255, 255, 255);
                 color: rgb(0, 0, 0);
             }
 
@@ -78,7 +79,7 @@
             }
 
             footer {
-                border: 1px solid #CCC;
+                border: 0px solid #CCC;
                 clear: both;
             }
 
@@ -88,39 +89,63 @@
 
             body, header, section, aside, footer {
                 border: solid 1px #ccc;
-            }
-
-            h6 { 
-                color: #000000; 
-                background-color:#ffffff;
-            }
-
-            h5 { 
-                color: rgb(181, 171,184);
-                background-color:#000000;
-            }
+            }           
 
             p {
                 font-size: 18px;
     
              }
 
+             img {
+               width: 100%;
+               height: auto;
+
+           } 
+
+           .foto{
+                width: 64%;
+            }
+
+            .foto_aside{
+                width: 100%;
+            }
+
+            h1{
+                color:white;
+                background-color: rgb(181, 171,184);
+                padding-left: 2%;
+                
+            }
+
+            #img_tarifa{
+                width: 90%;
+                height: 60%;
+                float: center;
+           }
+
+           #img_rr{
+                width: 2%;
+                float: center;
+           }
+           
+           h6 {
+                bottom: 50px;
+            }
 
             /* CSS RESPONSIVO */
             
+             /* pantallas > 1300px*/
              @media only screen and (min-width : 2000px) {
                 body {
                     width: 94%;
                 }
                 section {
-                    width: 70%;
+                    width: 100%;
                 }
                 aside {
                     width: 29%;
                 }
             }       
-
-            /* pantallas > 1300px*/
 
             @media only screen and (min-width : 1300px) {
                 body {
@@ -128,6 +153,9 @@
                 }
                 section {
                     width: 100%;
+                }
+                aside {
+                    width: 29%;
                 }
             }       
 
@@ -137,8 +165,13 @@
                 }
                 section {
                     width: 100%;
-                }              
-                
+                }
+                aside {
+                    width: 100%;
+                }               
+                #section{
+                    display: none;
+                }
             }            
             
             @media only screen and (max-width : 850px) {
@@ -147,42 +180,26 @@
                 }
                 section {
                     width: 100%;
-                }            
-               
-            }              
-
-            .foto{
-                width: 64%;
-            }
-
-            .foto_aside{
-                width: 100%;
-            }
-            img {
-               width: 100%;
-               height: auto;
-
-           } 
-
-           #img_redes{
-                width: 2%;
-                height:2%;
-                float: center;
                 }
-
-
+                aside {
+                    width: 100%;
+                }               
+                #section{
+                    display: none;
+                }
+            }              
 
 
         </style>
     </head>
     <body>
         <header>
+
             <h5 style="text-align:center" color: #fff >Consigue tu regalo exclusivo <a href=alta.html>¡Apúntate ahora!</a></h5>
-           
-            
+
                         <nav class="menuCSS3">
                             <ul>
-                                <li><a href="/">HOME</a>
+                                <li><a href="index.html">HOME</a>
                                 </li>
                                 <li><a href="iron.html">IRON</a></li>
                                 <li><a href="buscador.html">Buscador</a></li>
@@ -216,53 +233,102 @@
                                 
                             </ul>
                         </nav>
-                        
+            
             <p>&nbsp;</p>
         </header>
         <main>
+            <section>
+                <h3>Buscador de gimnasio en Maps :</h3>
+                <br><br><br><br>
+                <br>
+                <img id="maps" src="img/Captura de pantalla (153).png">
+                <br><br>
+            </section>
+            <setion id="a">
+                <div class="columna">
+                    <div >
+                        <h3 class="d">Aluche</h3><br>
+                        <h3 >Calle Mirlo, nº5</h3><br>
+                        <ul>
+                        <li>CLASES COLECTIVAS</li>
+                        <li>ENTRENADOR PERSONAL</li>
+                        <li>YANGA SPORT WATER</li>
+                    </ul>
+                    <br><br>
+                    <img src="img/OIP (1).jpeg">
+                    </div>
+                    <div >
+                        <br><br><br><br><h3 class="d">Móstoles</h3><br>
+                        <h3 >Calle Pez, nº52</h3><br>
+                        <ul>
+                        <li>CLASES COLECTIVAS</li>
+                        <li>YANGA SPORT WATER</li>
+                    </ul>
+                    <br><br><br><img src="img/433723-Kycb.jpg"><br><br>
+                    </div>
+                    <div >
+                        <br><h3 class="d">Alcorcón</h3><br>
+                        <h3 >Calle Estornino, 12, Bajo A</h3><br>
+                        <ul>
+                        <li>CLASES COLECTIVAS</li>
+                        <li>CLASES VIRTUALES</li>
+                    </ul>
+                    <br><img src="img/R.jpeg"><br><br>
+                    </div>
+                </div>
+                <div class="columna">
+                    <div >
+                        <h3 class="d">Leganés</h3><br>
+                        <h3 >Calle Loro, nº15</h3><br>
+                        <ul>
+                        <li>ENTRENADOR PERSONAL</li>
+                        <li>CLASES VIRTUALES</li>
+                    </ul>
+                    <br><br><br><img src="img/R (1).jpeg"><br><br>
+                    </div>
+                    <div >
+                        
+                        <br><h3 class="d">Fuenlabrada</h3><br>
+                        <h3 >Calle Canario, nº1</h3><br>
+                        <ul>
+                        <li>CLASES COLECTIVAS</li>
+                        <li>ENTRENADOR PERSONAL</li>
+                        <li>YANGA SPORT WATER</li>
+                        <li>CLASES VIRTUALES</li>
+                    </ul>
+                    <br><img src="img/R (2).jpeg"><br><br>
+                    </div>
+                    <div >
+                        
+                        <br><h3 class="d">Getafe</h3><br>
+                        <h3 >Calle Mirlo, nº5</h3><br>
+                        <ul>
+                        <li>CLASES COLECTIVAS</li>
+                        <li>CLASES VIRTUALES</li>
+                    </ul>
+                    <br><img src="img/OIP.jpeg"><br><br>
+                    </div>
+                </div>
+            <section id="e">
 
-            <section id="section">
-                <img src="img/david2.jpg" alt="texto alternativo">
-                
-                <div class="foto1" style="background-color: #333333;">       
-                    <img class="foto" src="img/live.png">              
-                    <img src="img/texto1.png" style="width: 35%; margin-bottom: 10%;">    
-                </div>
-                <div class="foto2" style="background-color: #333333;">        
-                    <img src="img/texto2.png" style="width: 35%; margin-bottom: 4%;">    
-                    <img class="foto" src="img/virtual.png">    
-                </div>
-                <div class="foto3" style="background-color: #333333;">   
-                    <img class="foto" src="img/demand.png">              
-                    <img src="img/texto3.png" style="width: 35%;">    
-                </div>               
-            
-            <!--aside>
-                <h1 style="color: #fff;">Clases presenciales</h1>      
-                <img class="foto_aside" src="img/presencial2.jpeg">
-                <h1 style="color: #fff;">Clases virtuales</h1>     
-                <img class="foto_aside" src="img/virtual2.png">
-                <h1 style="color: #fff;">Clases con reserva</h1>     
-                <img class="foto_aside" src="img/reserva.png">   
-                <img id="img_logo" class="foto_aside" src="img/logoGris.png">
-            </aside-->   
+
+            </section>
             <footer>
-                <a href="https://www.instagram.com"> <img src="img/iconoInsta.png" id="img_redes" width="20" height="20"></a>
-                <a href="https://www.facebook.com"> <img src="img/iconoFace.png" id="img_redes" width="20" height="20"></a>
-                <a href="https://www.teamviewer.com/es/"> <img src="img/iconoVideo.png" id="img_redes" width="25" height="25"></a>
+                <img src="img/iconoInsta.png" id="img_rr" width="20" height="20">
+                <img src="img/iconoFace.png" id="img_rr" width="20" height="20"> 
+                <img src="img/iconoVideo.png" id="img_rr" width="25" height="25">
+                
+                
+                
             </footer>
-            <h6 style="text-align:center">
+        <h6 style="text-align:center">
             <a href="cookies.html" style="color:#979292;">Declaración de cookies</a> 
             <a href="" style="color:#979292;">Declaración de privacidad</a>
             <a href="" style="color:#979292;">Derechos de recesión</a>
             <a href="" style="color:#979292;">Reglamento de videovigilancia</a>
             <a href=""  style="color:#979292">Términos y condiciones</a>
             <a href="" style="color:#979292;">Aviso Legal</a>
-            </h6>
-            </section>
-                       
-        </main>
-        
-        
+        </h6>
     </body>
 </html>
+       
